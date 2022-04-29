@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\indexController;
+use App\Http\Controllers\productsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,6 +14,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('index',[indexController::class,'index'])->name('index');
+Route::get('released-products',[productsController::class,'products'])->name('products');
+
+
+
+
+
+
 
 Route::get('/', function () {
     return view('welcome');
