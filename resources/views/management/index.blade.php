@@ -22,9 +22,10 @@
     <div class="announce-outside-table">
         <button class="add-announce-btn" id="add-announce-btn">Announce</button>
         <div class="announcement-form-outside-div">
-            <form action="" method="post">
+            <form action="{{route('addannounce')}}" method="post">
+                @csrf
                 <div class="announcement-form-inside-div">
-                    <input type="text" placeholder="Type the announcement" class="announce-input">
+                    <input type="text" placeholder="Type the announcement" class="announce-input" name="announce">
                     <button type="submit" class="announce-btn" id="announce-btn-upload">Upload</button>
                 </div>
             </form>
@@ -37,25 +38,23 @@
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
+            @foreach($announce as $item)
             <tr>
-                <td>22/04/2022</td>
-                <td>Michael Nyahende</td>
-                <td class="announcement-td">The announcement has to be as long as
-                     possible so as to check 
-                     whether it will fit or not
-                </td>
+                <td>{{$item->updated_at}}</td>
+                <td>{{$item->Announcer}}</td>
+                <td>{{$item->Announcement}}</td>
                 <td>Edit</td>
                 <td>Delete</td>
-            </tr>           
+            </tr>     
+            @endforeach      
         </table>
     </div>
 </div>
 
 <div class="left-div">
     <ul>
-        <li><a href=""> Report</a></li><hr>
-        <li><a href=""> Forum</a></li><hr>
-        <li><a href=""> Workers</a></li>
+        <li><a href="{{route('report')}}"> Report</a></li><hr>
+        <li><a href="{{route('forum')}}"> Forum</a></li><hr>
     </ul>
 
 </div>

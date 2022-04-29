@@ -121,6 +121,9 @@
     margin-left:10px;
     display: none;
 }
+.active{
+    background-color:rgb(73, 69, 69)!important ;
+}
 .add-product-form-8{
     margin-left:10px;
     display: none;
@@ -138,6 +141,36 @@
     height:30px;
     border-radius: 5px;
     border:1px solid white;
+}
+.reporting-div{
+    margin-top:20px;
+}
+.report-input{
+    margin:10px;
+    background-color: transparent;
+    height:30px;
+    width:150px;
+    border-radius:5px;
+    border:1px solid white;
+}
+.report-input::placeholder{
+    color:white;
+    text-align: center;
+}
+.reporting-title{
+    margin-left: 300px;
+    padding-top:20px;
+    font-size:20px;
+}
+.daily-chart-div{
+    border:1px solid white;
+    height:350px;
+    margin-top:10px;
+}
+.monthly-chart-div{
+    border:1px solid white;
+    height:350px;
+    margin-top:10px;
 }
 .product-input::placeholder{
     color:white;
@@ -274,8 +307,53 @@ overflow-y: scroll;
     border-radius:5px;
     font-size: 18px;
 }
+.add-announce-btn:hover{
+    background-color: rgb(165, 161, 161);
+    cursor:pointer;
+}
 .add-announce-btn a{
     text-decoration: none;
+}
+.product-success{
+    font-weight: lighter;
+    margin-left:300px;
+    color:greenyellow;
+}
+.forum-send-btn{
+    width:90px;
+    height:40px;
+    background-color:black;
+    border:1px solid black;
+    border-radius:20px;
+    font-size: 18px;
+}
+.forum-send-btn:hover{
+    cursor:pointer;
+    background-color: rgb(165, 161, 161);
+}
+.forum-input{
+    width:600px;
+    height:40px;
+    border-radius: 20px;
+    border:1px solid white;
+    background-color: transparent;
+}
+.forum-input::placeholder{
+  text-align: center;
+  color:white;
+  font-size:20px;
+  font-weight: lighter;
+  font-style: italic;
+}
+.forum-display-div{
+    height:370px;
+    width:700px;
+    border:3px solid white;
+    margin:10px;
+    border-radius: 20px;
+}
+.forum-form{
+    margin:10px;
 }
 .announce-input{
     background-color: transparent;

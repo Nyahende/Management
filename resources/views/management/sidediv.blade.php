@@ -25,8 +25,8 @@
     <div class="released-div">
         <ul>
             <li><a href="{{route('products')}}"> Released Products</a></li> <hr>
-            <li><a href=""> Rejects</a></li> <hr>
-            <li><a href=""> Charts</a></li>
+            <li><a href="{{route('rejects')}}"> Rejects</a></li> <hr>
+            <li><a href="{{route('charts')}}"> Charts</a></li>
         </ul>
     </div>
 

@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Managament System | Released Products</title>
+    <title>Managament System | Rejects</title>
 </head>
 
      <link rel="stylesheet" href="{{asset('/main.css')}}"/>
@@ -21,7 +21,7 @@
 
 <div class="products-div">
     <button class="add-announce-btn" ><a href="{{route('index')}}"> Home</a></button>
-    <span class="released-products-header">RELEASED PRODUCTS</span>
+    <span class="released-products-header">REJECTS</span>
 
 <div class="tabbed-panel">
         <div class="tabbedul">
@@ -41,18 +41,18 @@
         <div class="tabbed-content">
             <div id="product1">
                 <span class="product-header">Product One</span><br>
-                @if(Session::get('addproduct1'))
-                  <div class="product-success">
-                    {{Session::get('addproduct1')}}
-                  </div>
-                @endif
+                    @if(Session::get('addreject1'))
+                        <div class="product-success">
+                            {{Session::get('addreject1')}}
+                        </div>
+                    @endif
                 <div class="add-product-form">
-                    <form action="{{route('addproduct1')}}" method="post">
-                        @csrf
+                    <form action="{{route('addrej1')}}" method="post">
+                       @csrf
                         <div class="inside-product-form">
-                            <input type="text" name="prodctquantity1" id="" placeholder="Quantity" class="product-input">
-                            <input type="text" name="productname1" id="" placeholder="Product Name" class="product-input">
-                            <input type="text" name="productapp1" id="" placeholder="Approval" class="product-input">
+                            <input type="text" name="rejectquantity1" id="" placeholder="Quantity" class="product-input">
+                            <input type="text" name="rejectname1" id="" placeholder="Product Name" class="product-input">
+                            <input type="text" name="rejectapp1" id="" placeholder="Approval" class="product-input">
                             <button type="submit" class="add-announce-btn" id="product-upload">Upload</button>
                         </div>
                     </form>
@@ -68,16 +68,16 @@
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
-            @foreach($product1 as $item)
-            <tr>
-                <td>{{$item->id}}</td>
-                <td>{{$item->updated_at}}</td>
-                <td>{{$item->Quantity}}</td>
-                <td>{{$item->Approval}}</td>
-                <td>Edit</td>
-                <td>Delete</td>
-            </tr>   
-            @endforeach 
+            @foreach($Reject1 as $item)
+                <tr>
+                    <td>{{$item->id}}</td>
+                    <td>{{$item->updated_at}}</td>
+                    <td>{{$item->Quantity}}</td>
+                    <td>{{$item->Approval}}</td>
+                    <td>Edit</td>
+                    <td>Delete</td>
+                </tr>    
+            @endforeach     
             
         </table>
 
@@ -86,12 +86,12 @@
 
             <span class="product-header">Product two</span> <br>
             <div class="add-product-form-2">
-                    <form action="{{route('addproduct2')}}" method="post">
+                    <form action="{{route('addrej2')}}" method="post">
                         @csrf
                         <div class="inside-product-form">
-                            <input type="text" name="prodctquantity2" id="" placeholder="Quantity" class="product-input">
-                            <input type="text" name="productname2" id="" placeholder="Product Name" class="product-input">
-                            <input type="text" name="productapp2" id="" placeholder="Approval" class="product-input">
+                            <input type="text" name="rejectquantity2" id="" placeholder="Quantity" class="product-input">
+                            <input type="text" name="rejectname2" id="" placeholder="Product Name" class="product-input">
+                            <input type="text" name="rejectapp2" id="" placeholder="Approval" class="product-input">
                             <button type="submit" class="add-announce-btn" id="product-upload-2">Upload</button>
                         </div>
                     </form>
@@ -107,18 +107,17 @@
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
-
-            @foreach($product2 as $item)
-
-            <tr>
-                <td>{{$item->id}}</td>
+            @foreach($Reject2 as $item)
+                <tr>
+                    <td>{{$item->id}}</td>
                     <td>{{$item->updated_at}}</td>
                     <td>{{$item->Quantity}}</td>
                     <td>{{$item->Approval}}</td>
                     <td>Edit</td>
                     <td>Delete</td>
                 </tr>    
-            @endforeach
+            @endforeach   
+            
         </table>
                 
             </div>
@@ -126,12 +125,12 @@
 
             <span class="product-header">Product three</span> <br>
             <div class="add-product-form-3">
-                    <form action="{{route('addproduct3')}}" method="post">
+                    <form action="{{route('addrej3')}}" method="post">
                         @csrf
                         <div class="inside-product-form">
-                            <input type="text" name="prodctquantity3" id="" placeholder="Quantity" class="product-input">
-                            <input type="text" name="productname3" id="" placeholder="Product Name" class="product-input">
-                            <input type="text" name="productapp3" id="" placeholder="Approval" class="product-input">
+                            <input type="text" name="rejectquantity3" id="" placeholder="Quantity" class="product-input">
+                            <input type="text" name="rejectname3" id="" placeholder="Product Name" class="product-input">
+                            <input type="text" name="rejectapp3" id="" placeholder="Approval" class="product-input">
                             <button type="submit" class="add-announce-btn" id="product-upload-3">Upload</button>
                         </div>
                     </form>
@@ -147,8 +146,7 @@
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
-            @foreach($product3 as $item)
-
+            @foreach($Reject3 as $item)
                 <tr>
                     <td>{{$item->id}}</td>
                     <td>{{$item->updated_at}}</td>
@@ -157,7 +155,7 @@
                     <td>Edit</td>
                     <td>Delete</td>
                 </tr>    
-            @endforeach    
+            @endforeach   
             
         </table>
 
@@ -166,12 +164,12 @@
 
             <span class="product-header">Product Four</span> <br>
             <div class="add-product-form-4">
-                    <form action="{{route('addproduct4')}}" method="post">
+                    <form action="{{route('addrej4')}}" method="post">
                         @csrf
                         <div class="inside-product-form">
-                            <input type="text" name="prodctquantity4" id="" placeholder="Quantity" class="product-input">
-                            <input type="text" name="productname4" id="" placeholder="Product Name" class="product-input">
-                            <input type="text" name="productapp4" id="" placeholder="Approval" class="product-input">
+                            <input type="text" name="rejectquantity4" id="" placeholder="Quantity" class="product-input">
+                            <input type="text" name="rejectname4" id="" placeholder="Product Name" class="product-input">
+                            <input type="text" name="rejectapp4" id="" placeholder="Approval" class="product-input">
                             <button type="submit" class="add-announce-btn" id="product-upload-4">Upload</button>
                         </div>
                     </form>
@@ -187,8 +185,7 @@
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
-            @foreach($product4 as $item)
-
+            @foreach($Reject4 as $item)
                 <tr>
                     <td>{{$item->id}}</td>
                     <td>{{$item->updated_at}}</td>
@@ -207,12 +204,12 @@
 
             <span class="product-header">Product Five</span> <br>
             <div class="add-product-form-5">
-                    <form action="{{route('addproduct5')}}" method="post">
+                    <form action="{{route('addrej5')}}" method="post">
                         @csrf
                         <div class="inside-product-form">
-                            <input type="text" name="prodctquantity5" id="" placeholder="Quantity" class="product-input">
-                            <input type="text" name="productname5" id="" placeholder="Product Name" class="product-input">
-                            <input type="text" name="productapp5" id="" placeholder="Approval" class="product-input">
+                            <input type="text" name="rejectquantity5" id="" placeholder="Quantity" class="product-input">
+                            <input type="text" name="rejectname5" id="" placeholder="Product Name" class="product-input">
+                            <input type="text" name="rejectapp5" id="" placeholder="Approval" class="product-input">
                             <button type="submit" class="add-announce-btn" id="product-upload-5">Upload</button>
                         </div>
                     </form>
@@ -228,8 +225,7 @@
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
-            @foreach($product5 as $item)
-
+            @foreach($Reject5 as $item)
                 <tr>
                     <td>{{$item->id}}</td>
                     <td>{{$item->updated_at}}</td>
@@ -238,7 +234,7 @@
                     <td>Edit</td>
                     <td>Delete</td>
                 </tr>    
-            @endforeach    
+            @endforeach  
             
         </table>
 
@@ -248,12 +244,12 @@
 
             <span class="product-header">Product Six</span> <br>
             <div class="add-product-form-6">
-                    <form action="{{route('addproduct6')}}" method="post">
+                    <form action="{{route('addrej6')}}" method="post">
                         @csrf
                         <div class="inside-product-form">
-                            <input type="text" name="prodctquantity6" id="" placeholder="Quantity" class="product-input">
-                            <input type="text" name="productname6" id="" placeholder="Product Name" class="product-input">
-                            <input type="text" name="productapp6" id="" placeholder="Approval" class="product-input">
+                            <input type="text" name="rejectquantity6" id="" placeholder="Quantity" class="product-input">
+                            <input type="text" name="rejectname6" id="" placeholder="Product Name" class="product-input">
+                            <input type="text" name="rejectapp6" id="" placeholder="Approval" class="product-input">
                             <button type="submit" class="add-announce-btn" id="product-upload-6">Upload</button>
                         </div>
                     </form>
@@ -269,8 +265,7 @@
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
-            @foreach($product6 as $item)
-
+            @foreach($Reject6 as $item)
                 <tr>
                     <td>{{$item->id}}</td>
                     <td>{{$item->updated_at}}</td>
@@ -289,12 +284,12 @@
 
             <span class="product-header">Product Seven</span> <br>
             <div class="add-product-form-7">
-                    <form action="{{route('addproduct7')}}" method="post">
+                    <form action="{{route('addrej7')}}" method="post">
                         @csrf
                         <div class="inside-product-form">
-                            <input type="text" name="prodctquantity7" id="" placeholder="Quantity" class="product-input">
-                            <input type="text" name="productname7" id="" placeholder="Product Name" class="product-input">
-                            <input type="text" name="productapp7" id="" placeholder="Approval" class="product-input">
+                            <input type="text" name="rejectquantity7" id="" placeholder="Quantity" class="product-input">
+                            <input type="text" name="rejectname7" id="" placeholder="Product Name" class="product-input">
+                            <input type="text" name="rejectapp7" id="" placeholder="Approval" class="product-input">
                             <button type="submit" class="add-announce-btn" id="product-upload-7">Upload</button>
                         </div>
                     </form>
@@ -310,8 +305,7 @@
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
-            @foreach($product7 as $item)
-
+            @foreach($Reject7 as $item)
                 <tr>
                     <td>{{$item->id}}</td>
                     <td>{{$item->updated_at}}</td>
@@ -330,12 +324,12 @@
 
             <span class="product-header">Product Eight</span> <br>
             <div class="add-product-form-8">
-                    <form action="{{route('addproduct8')}}" method="post">
+                    <form action="{{route('addrej8')}}" method="post">
                         @csrf
                         <div class="inside-product-form">
-                            <input type="text" name="prodctquantity8" id="" placeholder="Quantity" class="product-input">
-                            <input type="text" name="productname8" id="" placeholder="Product Name" class="product-input">
-                            <input type="text" name="productapp8" id="" placeholder="Approval" class="product-input">
+                            <input type="text" name="rejectquantity8" id="" placeholder="Quantity" class="product-input">
+                            <input type="text" name="rejectname8" id="" placeholder="Product Name" class="product-input">
+                            <input type="text" name="rejectapp8" id="" placeholder="Approval" class="product-input">
                             <button type="submit" class="add-announce-btn" id="product-upload-8">Upload</button>
                         </div>
                     </form>
@@ -351,8 +345,7 @@
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
-            @foreach($product8 as $item)
-
+            @foreach($Reject8 as $item)
                 <tr>
                     <td>{{$item->id}}</td>
                     <td>{{$item->updated_at}}</td>
@@ -361,7 +354,7 @@
                     <td>Edit</td>
                     <td>Delete</td>
                 </tr>    
-            @endforeach    
+            @endforeach   
             
         </table>
 
@@ -371,12 +364,12 @@
 
             <span class="product-header">Product Nine</span> <br>
             <div class="add-product-form-9">
-                    <form action="{{route('addproduct9')}}" method="post">
+                    <form action="{{route('addrej9')}}" method="post">
                         @csrf
                         <div class="inside-product-form">
-                            <input type="text" name="prodctquantity9" id="" placeholder="Quantity" class="product-input">
-                            <input type="text" name="productname9" id="" placeholder="Product Name" class="product-input">
-                            <input type="text" name="productapp9" id="" placeholder="Approval" class="product-input">
+                            <input type="text" name="rejectquantity9" id="" placeholder="Quantity" class="product-input">
+                            <input type="text" name="rejectname9" id="" placeholder="Product Name" class="product-input">
+                            <input type="text" name="rejectapp9" id="" placeholder="Approval" class="product-input">
                             <button type="submit" class="add-announce-btn" id="product-upload-9">Upload</button>
                         </div>
                     </form>
@@ -392,8 +385,7 @@
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
-            @foreach($product9 as $item)
-
+            @foreach($Reject9 as $item)
                 <tr>
                     <td>{{$item->id}}</td>
                     <td>{{$item->updated_at}}</td>
@@ -402,7 +394,7 @@
                     <td>Edit</td>
                     <td>Delete</td>
                 </tr>    
-            @endforeach    
+            @endforeach   
             
         </table>
 
@@ -412,12 +404,12 @@
 
             <span class="product-header">Product Ten</span> <br>
             <div class="add-product-form-10">
-                    <form action="{{route('addproduct10')}}" method="post">
+                    <form action="{{route('addrej10')}}" method="post">
                         @csrf
                         <div class="inside-product-form">
-                            <input type="text" name="prodctquantity10" id="" placeholder="Quantity" class="product-input">
-                            <input type="text" name="productname10" id="" placeholder="Product Name" class="product-input">
-                            <input type="text" name="productapp10" id="" placeholder="Approval" class="product-input">
+                            <input type="text" name="rejectquantity10" id="" placeholder="Quantity" class="product-input">
+                            <input type="text" name="rejectname10" id="" placeholder="Product Name" class="product-input">
+                            <input type="text" name="rejectapp10" id="" placeholder="Approval" class="product-input">
                             <button type="submit" class="add-announce-btn" id="product-upload-10">Upload</button>
                         </div>
                     </form>
@@ -433,8 +425,7 @@
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
-            
-            @foreach($product10 as $item)
+            @foreach($Reject10 as $item)
                 <tr>
                     <td>{{$item->id}}</td>
                     <td>{{$item->updated_at}}</td>
@@ -443,7 +434,7 @@
                     <td>Edit</td>
                     <td>Delete</td>
                 </tr>    
-            @endforeach     
+            @endforeach   
             
         </table>
 
