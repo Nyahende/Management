@@ -23,8 +23,12 @@ class chartsController extends Controller
                             ->sum('Quantity');
             $intdata1 = (int)$data1;
             array_push($ProductRec1,$intdata1);
+            $maximum1 = max($ProductRec1);
+            $min1 = min($ProductRec1);
+
+            $tatalProductRec1 = DB::table('products')->where('Product_Name','satini1')->whereYear('created_at', $year)->sum('Quantity');
+            $avgpro1 = $tatalProductRec1/12;
             }
-            $tatalProductRec1 = DB::table('products')->whereYear('created_at', $year)->count();
 
             $RejectRec1= [];
 
@@ -39,9 +43,13 @@ class chartsController extends Controller
                             ->sum('Quantity');
             $intdatarej1 = (int)$datarej1;
             array_push($RejectRec1,$intdatarej1);
-            }
-            $tatalRejRec1 = DB::table('rejects')->whereYear('created_at', $year)->count();
+            $maximumrej1 = max($RejectRec1);
+            $minrej1 = min($RejectRec1);
 
-        return view('management.charts',compact('RejectRec1','ProductRec1'));
+            $tatalRejectRec1 = DB::table('rejects')->where('Reject_Name','rej1')->whereYear('created_at', $year)->sum('Quantity');
+            $avgrej1 = $tatalRejectRec1/12;
+            }
+
+        return view('management.charts',compact('RejectRec1','avgpro1','year','tatalProductRec1','min1','maximum1','maximumrej1','minrej1','ProductRec1','avgrej1','tatalRejectRec1'));
     }
 }

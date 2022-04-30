@@ -168,9 +168,30 @@
     margin-top:10px;
 }
 .monthly-chart-div{
-    border:1px solid white;
     height:350px;
     margin-top:10px;
+}
+#barChart{
+    height:350px;
+    width:800px;
+}
+.chart-desc-inner{
+    height:300px;
+}
+.min{
+    margin:10px;
+}
+.chart-desc-inner{
+    margin:20px;
+}
+
+.chart-desc{
+    height:350px;
+    border:1px solid white;
+    width:200px;
+    float:right;
+    margin-top:-352px;
+
 }
 .product-input::placeholder{
     color:white;
@@ -310,6 +331,9 @@ overflow-y: scroll;
 .add-announce-btn:hover{
     background-color: rgb(165, 161, 161);
     cursor:pointer;
+}
+.monthly-chart-record{
+    margin-left:300px;
 }
 .add-announce-btn a{
     text-decoration: none;

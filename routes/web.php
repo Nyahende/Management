@@ -24,6 +24,7 @@ Route::get('index',[indexController::class,'index'])->name('index');
 Route::get('released-products',[productsController::class,'products'])->name('products');
 Route::get('rejects',[rejectsController::class,'rejects'])->name('rejects');
 Route::get('charts',[chartsController::class,'charts'])->name('charts');
+Route::post('charts',[chartsController::class,'charts'])->name('chartsinput');
 Route::get('report',[reportController::class,'report'])->name('report');
 Route::post('addannounce',[announcementsController::class,'addannounce'])->name('addannounce');
 Route::get('forum',[forumController::class,'forum'])->name('forum');
