@@ -164,14 +164,100 @@
 }
 .daily-chart-div{
     border:1px solid white;
-    height:350px;
+    height:450px;
     margin-top:10px;
 }
 .monthly-chart-div{
     height:350px;
     margin-top:10px;
 }
-#barChart{
+#barChartdaily1{
+    margin-top:-20px;
+    height:350px;
+    width:800px;
+}
+#barChart1{
+    height:350px;
+    width:800px;
+}
+#barChartdaily2{
+    margin-top:-20px;
+    height:350px;
+    width:800px;
+}
+#barChart2{
+    height:350px;
+    width:800px;
+}
+#barChartdaily3{
+    margin-top:-20px;
+    height:350px;
+    width:800px;
+}
+#barChart3{
+    height:350px;
+    width:800px;
+}
+#barChartdaily4{
+    margin-top:-20px;
+    height:350px;
+    width:800px;
+}
+#barChart4{
+    height:350px;
+    width:800px;
+}
+#barChartdaily5{
+    margin-top:-20px;
+    height:350px;
+    width:800px;
+}
+#barChart5{
+    height:350px;
+    width:800px;
+}
+#barChartdaily6{
+    margin-top:-20px;
+    height:350px;
+    width:800px;
+}
+#barChart6{
+    height:350px;
+    width:800px;
+}
+#barChartdaily7{
+    margin-top:-20px;
+    height:350px;
+    width:800px;
+}
+#barChart7{
+    height:350px;
+    width:800px;
+}
+#barChartdaily8{
+    margin-top:-20px;
+    height:350px;
+    width:800px;
+}
+#barChart8{
+    height:350px;
+    width:800px;
+}
+#barChartdaily9{
+    margin-top:-20px;
+    height:350px;
+    width:800px;
+}
+#barChart9{
+    height:350px;
+    width:800px;
+}
+#barChartdaily10{
+    margin-top:-20px;
+    height:350px;
+    width:800px;
+}
+#barChart10{
     height:350px;
     width:800px;
 }
@@ -187,11 +273,15 @@
 
 .chart-desc{
     height:350px;
-    border:1px solid white;
     width:200px;
     float:right;
     margin-top:-352px;
-
+}
+.daily-chart-desc{
+    height:300px;
+    width:197px;
+    float:right;
+    margin-top:-350px;
 }
 .product-input::placeholder{
     color:white;
