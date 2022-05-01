@@ -866,7 +866,7 @@ class chartsController extends Controller
 
 
 
-    //  PRODUCT TEN MONTHLY
+    //PRODUCT TEN MONTHLY
 
         $ProductRec10  = [];
             for ($i=1; $i<=12; $i++) {
@@ -880,17 +880,13 @@ class chartsController extends Controller
             array_push($ProductRec10,$intdata10);
             $maximum10 = max($ProductRec10);
             $min10 = min($ProductRec10);
-
             $tatalProductRec10 = DB::table('products')->where('Product_Name','satini10')->whereYear('created_at', $year)->sum('Quantity');
             $avgpro10 = $tatalProductRec10/12;
             }
 
             $RejectRec10 = [];
-
             for ($i=1; $i<=12; $i++) {
-
             $year = $request->year;
-
             $datarej10 = DB::table('rejects')
                             ->where('Reject_Name','=','rej10')
                             ->whereYear('created_at', $year)                  
@@ -900,7 +896,6 @@ class chartsController extends Controller
             array_push($RejectRec10,$intdatarej10);
             $maximumrej10 = max($RejectRec10);
             $minrej10 = min($RejectRec10);
-
             $tatalRejectRec10 = DB::table('rejects')->where('Reject_Name','rej10')->whereYear('created_at', $year)->sum('Quantity');
             $avgrej10 = $tatalRejectRec10/12;
             }
