@@ -115,4 +115,9 @@ class rejectsController extends Controller
         $query=$reject10->save();
         return redirect()->back()->with('addreject1','You have added Rejects-10 into the Database');
     }
+    public function deletereject($id){
+        $products=rejects::find($id);
+        $products->delete($id);
+        return redirect()->back()->with('deletereject','You have deleted a Reject from the Database');
+    }
 }

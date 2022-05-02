@@ -818,6 +818,7 @@ class chartsController extends Controller
 
 
             $dailypro9 = [];
+
             for ($i=1; $i<=31; $i++) {
           
               $year = $request->year;
@@ -828,13 +829,14 @@ class chartsController extends Controller
                               ->whereMonth('created_at', $month)
                               ->whereDay('created_at', $i)
                               ->sum('Quantity');
-                $dailyintpro9 = (int)$dailypro9data;
+              $dailyintpro9 = (int)$dailypro9data;
               array_push($dailypro9,$dailyintpro9);
               $dailypromaximum9 = max($dailypro9);
               $dailypromin9 = min($dailypro9);
           
               $dailyprototal9 = DB::table('products')->where('Product_Name','=','satini9')->whereYear('created_at', $year)->whereMonth('created_at', $month)->sum('Quantity');
-                $dailyproavg9 = $dailyprototal9/30;
+              $dailyproavg9 = $dailyprototal9/30;
+              
               }
           
           $dailyRej9 = [];
@@ -944,7 +946,7 @@ class chartsController extends Controller
 
 // PRODUCT TEN ENDS HERE
 
-        return view('management.charts',compact('avgrej10','tatalRejectRec10','minrej10','maximumrej10','RejectRec10','avgpro10','tatalProductRec10','min10',
+        return view('management.charts',compact('RejectRec9','dailyRej8','tatalProductRec9','avgpro9','min9','dailytotalrej8','dailyavgrej8','dailymaxrej8','dailyminrej8','avgrej10','tatalRejectRec10','minrej10','maximumrej10','RejectRec10','avgpro10','tatalProductRec10','min10',
         'maximum10','ProductRec10','dailyavgrej9','dailytotalrej9','dailyminrej9','dailymaxrej9','dailyRej9','dailyproavg9','dailyprototal9','dailypromin9',
         'dailypromaximum9','dailypro9','avgrej8','tatalRejectRec8','minrej8','maximumrej8','datarej8','RejectRec8','avgpro8','tatalProductRec8','min8','maximum8',
         'ProductRec8','dailyavgrej2','dailytotalrej2','dailyminrej2','dailymaxrej2','dailyRej2','dailyproavg2','dailyprototal2','dailypromin2','dailypromaximum2',

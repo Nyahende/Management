@@ -46,6 +46,16 @@
                     {{Session::get('addproduct1')}}
                   </div>
                 @endif
+                @if(Session::get('deleteproduct'))
+                  <div class="product-success">
+                    {{Session::get('deleteproduct')}}
+                  </div>
+                @endif
+                @if(Session::get('updateproduct'))
+                  <div class="product-success">
+                    {{Session::get('updateproduct')}}
+                  </div>
+                @endif
                 <div class="add-product-form">
                     <form action="{{route('addproduct1')}}" method="post">
                         @csrf
@@ -74,8 +84,8 @@
                 <td>{{$item->updated_at}}</td>
                 <td>{{$item->Quantity}}</td>
                 <td>{{$item->Approval}}</td>
-                <td>Edit</td>
-                <td>Delete</td>
+                <td><a href="{{'editproduct/'.$item->id}}"> Edit </a></td>
+                <td><a href="{{'deleteproduct/'.$item->id}}">Delete</a></td>
             </tr>   
             @endforeach 
             
@@ -115,8 +125,8 @@
                     <td>{{$item->updated_at}}</td>
                     <td>{{$item->Quantity}}</td>
                     <td>{{$item->Approval}}</td>
-                    <td>Edit</td>
-                    <td>Delete</td>
+                    <td><a href="{{'editproduct/'.$item->id}}"> Edit </a></td>
+                    <td><a href="{{'deleteproduct/'.$item->id}}">Delete</a></td>
                 </tr>    
             @endforeach
         </table>
@@ -154,8 +164,8 @@
                     <td>{{$item->updated_at}}</td>
                     <td>{{$item->Quantity}}</td>
                     <td>{{$item->Approval}}</td>
-                    <td>Edit</td>
-                    <td>Delete</td>
+                    <td><a href="{{'editproduct/'.$item->id}}"> Edit </a></td>
+                    <td><a href="{{'deleteproduct/'.$item->id}}">Delete</a></td>
                 </tr>    
             @endforeach    
             
@@ -194,8 +204,8 @@
                     <td>{{$item->updated_at}}</td>
                     <td>{{$item->Quantity}}</td>
                     <td>{{$item->Approval}}</td>
-                    <td>Edit</td>
-                    <td>Delete</td>
+                    <td><a href="{{'editproduct/'.$item->id}}"> Edit </a></td>
+                    <td><a href="{{'deleteproduct/'.$item->id}}">Delete</a></td>
                 </tr>    
             @endforeach    
             
@@ -235,8 +245,8 @@
                     <td>{{$item->updated_at}}</td>
                     <td>{{$item->Quantity}}</td>
                     <td>{{$item->Approval}}</td>
-                    <td>Edit</td>
-                    <td>Delete</td>
+                    <td><a href="{{'editproduct/'.$item->id}}"> Edit </a></td>
+                    <td><a href="{{'deleteproduct/'.$item->id}}">Delete</a></td>
                 </tr>    
             @endforeach    
             
@@ -276,8 +286,8 @@
                     <td>{{$item->updated_at}}</td>
                     <td>{{$item->Quantity}}</td>
                     <td>{{$item->Approval}}</td>
-                    <td>Edit</td>
-                    <td>Delete</td>
+                    <td><a href="{{'editproduct/'.$item->id}}"> Edit </a></td>
+                    <td><a href="{{'deleteproduct/'.$item->id}}">Delete</a></td>
                 </tr>    
             @endforeach    
             
@@ -317,8 +327,8 @@
                     <td>{{$item->updated_at}}</td>
                     <td>{{$item->Quantity}}</td>
                     <td>{{$item->Approval}}</td>
-                    <td>Edit</td>
-                    <td>Delete</td>
+                    <td><a href="{{'editproduct/'.$item->id}}"> Edit </a></td>
+                    <td><a href="{{'deleteproduct/'.$item->id}}">Delete</a></td>
                 </tr>    
             @endforeach    
             
@@ -358,8 +368,8 @@
                     <td>{{$item->updated_at}}</td>
                     <td>{{$item->Quantity}}</td>
                     <td>{{$item->Approval}}</td>
-                    <td>Edit</td>
-                    <td>Delete</td>
+                    <td><a href="{{'editproduct/'.$item->id}}"> Edit </a></td>
+                    <td><a href="{{'deleteproduct/'.$item->id}}">Delete</a></td>
                 </tr>    
             @endforeach    
             
@@ -399,8 +409,8 @@
                     <td>{{$item->updated_at}}</td>
                     <td>{{$item->Quantity}}</td>
                     <td>{{$item->Approval}}</td>
-                    <td>Edit</td>
-                    <td>Delete</td>
+                    <td><a href="{{'editproduct/'.$item->id}}"> Edit </a></td>
+                    <td><a href="{{'deleteproduct/'.$item->id}}">Delete</a></td>
                 </tr>    
             @endforeach    
             
@@ -440,8 +450,8 @@
                     <td>{{$item->updated_at}}</td>
                     <td>{{$item->Quantity}}</td>
                     <td>{{$item->Approval}}</td>
-                    <td>Edit</td>
-                    <td>Delete</td>
+                    <td><a href="{{'editproduct/'.$item->id}}"> Edit </a></td>
+                    <td><a href="{{'deleteproduct/'.$item->id}}">Delete</a></td>
                 </tr>    
             @endforeach     
             

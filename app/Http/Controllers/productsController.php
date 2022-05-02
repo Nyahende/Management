@@ -116,4 +116,23 @@ class productsController extends Controller
         $query=$product10->save();
         return redirect()->back()->with('addproduct1','You have added Product-10 into the Database');
     }
+    public function deleteproduct($id){
+        $products=products::find($id);
+        $products->delete($id);
+        return redirect()->back()->with('deleteproduct','You have deleted a Product from the Database');
+    }
+
+    public function editproduct($id){
+        $updateproducts=products::find($id);
+        return view('management.editproduct',['updateproducts'=>$updateproducts]);
+    }
+
+    public function updateproduct(Request $request){
+        $updateproduct1 = products::find($request->id);
+        $updateproduct1->Product_Name=$request->productname1;
+        $updateproduct1->Quantity=$request->prodctquantity1;
+        $updateproduct1->Approval=$request->productapp1;
+        $updateproduct1->save();
+        return redirect('released-products')->with('updateproduct',"You have updated a Product's record..");
+    }
 }

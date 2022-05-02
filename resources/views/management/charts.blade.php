@@ -63,17 +63,17 @@
                        <div class="daily-chart-desc">
                          <div class="chart-desc-inner">
                               <span>Product 01</span>
-                            <div class="min" >Min:{{number_format($min1)}}</div>
-                            <div class="min">Max:{{number_format($maximum1)}}</div>
-                            <div class="min" >Avg:{{round($avgpro1,2)}}</div>
-                            <div class="min">Total:{{number_format($tatalProductRec1)}}</div>
+                            <div class="min" >Min:{{number_format($dailypromin1)}}</div>
+                            <div class="min">Max:{{number_format($dailypromaximum1)}}</div>
+                            <div class="min" >Avg:{{round($dailyproavg1,2)}}</div>
+                            <div class="min">Total:{{number_format($dailyprototal1)}}</div>
 
                             <span>Rejects 01</span>
 
-                            <div class="min" >Min:{{$minrej1}}</div>
-                            <div class="min">Max:{{number_format($maximumrej1)}}</div>
-                            <div class="min" >Avg:{{round($avgrej1,2)}}</div>
-                            <div class="min">Total:{{number_format($tatalRejectRec1)}}</div>
+                            <div class="min" >Min:{{$dailyminrej1}}</div>
+                            <div class="min">Max:{{number_format($dailymaxrej1)}}</div>
+                            <div class="min" >Avg:{{round($dailyavgrej1,2)}}</div>
+                            <div class="min">Total:{{number_format($dailytotalrej1)}}</div>
                          </div>
                        </div>
 
@@ -288,9 +288,7 @@
                               });
                             });
                         </script>
-
                       </div>
-
             </div>
             <div id="product2">
 
@@ -536,6 +534,7 @@
                         </script>
            
             </div>
+            </div>
             <div id="product3">
 
             <span class="product-header">Product three</span> <br>
@@ -597,7 +596,6 @@
                             <div class="min">Total:{{number_format($tatalRejectRec3)}}</div>
                          </div>
 
-                </div>
             
             </div>
              <!-- PRODUCT THREE DAILY -->
@@ -612,8 +610,8 @@
                                         //--------------
                                         //- BAR CHART -
                                         //--------------
-                                        var dailyPro3 = {{@json_encode($dailypro3) }};
-                                        var dailyRej1 = {{@json_encode($dailyRej3) }};
+                                        var dailyarrayPro3 = {{@json_encode($dailypro3) }};
+                                        var dailyarrayRej3 = {{@json_encode($dailyRej3) }};
 
                                         // Get context with jQuery - using jQuery's .get() method.
                                         var barChartCanvas = $('#barChartdaily3').get(0).getContext('2d')
@@ -630,7 +628,7 @@
                                               pointStrokeColor    : 'rgba(60,141,188,1)',
                                               pointHighlightFill  : '#fff',
                                               pointHighlightStroke: 'rgba(60,141,188,1)',
-                                              data                : dailyPro3
+                                              data                : dailyarrayPro3
                                             },
                                             {
                                               label               : 'Rejects 01',
@@ -641,7 +639,7 @@
                                               pointStrokeColor    : '#c1c7d1',
                                               pointHighlightFill  : '#fff',
                                               pointHighlightStroke: 'rgba(220,220,220,1)',
-                                              data                :dailyRej3
+                                              data                :dailyarrayRej3
                                             },
                                             
                                           ]
@@ -780,6 +778,8 @@
                               });
                             });
                         </script>
+                        </div>
+                        </div>
             <div id="product4">
 
             <span class="product-header">Product four</span> <br>
@@ -841,7 +841,6 @@
                             <div class="min">Total:{{number_format($tatalRejectRec4)}}</div>
                          </div>
 
-                </div>
                            
             </div>
              <!-- PRODUCT FOUR DAILY -->
@@ -1024,6 +1023,8 @@
                               });
                             });
                         </script>
+                        </div>
+                        </div>
             <div id="product5">
             <span class="product-header">Product five</span> <br>
 
@@ -1082,11 +1083,8 @@
                             <div class="min">Max:{{number_format($maximumrej5)}}</div>
                             <div class="min" >Avg:{{round($avgrej5,2)}}</div>
                             <div class="min">Total:{{number_format($tatalRejectRec5)}}</div>
-                         </div>
-
-                </div>
-                
-            </div>
+                         </div>                
+                       </div>
              <!-- PRODUCT FIVE DAILY -->
                       
              <script>
@@ -1267,6 +1265,8 @@
                               });
                             });
                         </script>
+                        </div>
+                        </div>
             <div id="product6">
             <span class="product-header">Product six</span> <br>
 
@@ -1325,11 +1325,8 @@
                             <div class="min">Max:{{number_format($maximumrej6)}}</div>
                             <div class="min" >Avg:{{round($avgrej6,2)}}</div>
                             <div class="min">Total:{{number_format($tatalRejectRec6)}}</div>
-                         </div>
-
-                </div>
-               
-            </div>
+                         </div>               
+                       </div>
              <!-- PRODUCT SIX DAILY -->
                       
              <script>
@@ -1360,7 +1357,7 @@
                                               pointStrokeColor    : 'rgba(60,141,188,1)',
                                               pointHighlightFill  : '#fff',
                                               pointHighlightStroke: 'rgba(60,141,188,1)',
-                                              data                : dailydailyarryPro6Pro1
+                                              data                : dailyarryPro6
                                             },
                                             {
                                               label               : 'Rejects 01',
@@ -1510,246 +1507,248 @@
                               });
                             });
                         </script>
-            <div id="product7">
+                        </div>
+                        </div>
+                        <div id="product7">
 
-            <span class="product-header">Product Seven</span> <br>
+                <span class="product-header">Product Seven</span> <br>
 
-            <span class="monthly-chart-record">Daily Chart records</span> <br>
+                <div class="daily-chart-div">
 
-                  <form action="{{route('chartsinput')}}" method="post">
-                      @csrf
-                      <input type="text" placeholder="Choose Year" class="product-input" name="year">
-                      <input type="text" placeholder="Choose Month" class="product-input" name="month">
-                      <button type="submit" class="add-announce-btn">Submit</button> <span>Year:{{$year}}/{{$month}}</span>
-                  </form> <br>
 
-                <canvas id="barChartdaily7" ></canvas>
-                <div class="daily-chart-desc">
-                  <div class="chart-desc-inner">
-                        <span>Product 07</span>
-                      <div class="min" >Min:{{number_format($dailypromin7)}}</div>
-                      <div class="min">Max:{{number_format($dailypromaximum7)}}</div>
-                      <div class="min" >Avg:{{round($dailyproavg7,2)}}</div>
-                      <div class="min">Total:{{number_format($dailyprototal7)}}</div>
+                <span class="monthly-chart-record">Daily Chart records</span> <br>
 
-                      <span>Rejects 07</span>
+                      <form action="{{route('chartsinput')}}" method="post">
+                          @csrf
+                          <input type="text" placeholder="Choose Year" class="product-input" name="year">
+                          <input type="text" placeholder="Choose Month" class="product-input" name="month">
+                          <button type="submit" class="add-announce-btn">Submit</button> <span>Year:{{$year}}/{{$month}}</span>
+                      </form> <br>
 
-                      <div class="min" >Min:{{$dailyminrej7}}</div>
-                      <div class="min">Max:{{number_format($dailymaxrej7)}}</div>
-                      <div class="min" >Avg:{{round($dailyavgrej7,2)}}</div>
-                      <div class="min">Total:{{number_format($dailytotalrej7)}}</div>
-                  </div>
-                </div>            
-            </div>
-            <div class="monthly-chart-div">
+                    <canvas id="barChartdaily7"></canvas>
+                    <div class="daily-chart-desc">
+                      <div class="chart-desc-inner">
+                            <span>Product 07</span>
+                          <div class="min" >Min:{{number_format($dailypromin7)}}</div>
+                          <div class="min">Max:{{number_format($dailypromaximum7)}}</div>
+                          <div class="min" >Avg:{{round($dailyproavg7,2)}}</div>
+                          <div class="min">Total:{{number_format($dailyprototal7)}}</div>
 
-                <span class="monthly-chart-record">Monthly Chart records</span>  
-                       <form action="{{route('chartsinput')}}" method="post">
-                         @csrf
-                         <input type="text" placeholder="Choose Year" class="product-input" name="year">
-                         <button type="submit" class="add-announce-btn">Submit</button> <span>Year:{{$year}}</span>
-                       </form> <br>
+                          <span>Rejects 07</span>
 
-                       <canvas id="barChart7" ></canvas>
-                       <div class="chart-desc">
-                         <div class="chart-desc-inner">
-                              <span>Product 07</span>
-                            <div class="min" >Min:{{number_format($min7)}}</div>
-                            <div class="min">Max:{{number_format($maximum7)}}</div>
-                            <div class="min" >Avg:{{round($avgpro7,2)}}</div>
-                            <div class="min">Total:{{number_format($tatalProductRec7)}}</div>
-
-                            <span>Rejects 07</span>
-
-                            <div class="min" >Min:{{$minrej7}}</div>
-                            <div class="min">Max:{{number_format($maximumrej7)}}</div>
-                            <div class="min" >Avg:{{round($avgrej7,2)}}</div>
-                            <div class="min">Total:{{number_format($tatalRejectRec7)}}</div>
-                         </div>
-
+                          <div class="min" >Min:{{$dailyminrej7}}</div>
+                          <div class="min">Max:{{number_format($dailymaxrej7)}}</div>
+                          <div class="min" >Avg:{{round($dailyavgrej7,2)}}</div>
+                          <div class="min">Total:{{number_format($dailytotalrej7)}}</div>
                       </div>
-                
-                 </div>
-                  <!-- PRODUCT SEVEN DAILY -->
-                      
-                  <script>
-                                      $(function () {
-                                        /* ChartJS
-                                        * -------
-                                        * Here we will create a few charts using ChartJS
-                                        */
+                    </div>            
+                </div>
+                <div class="monthly-chart-div">
 
-                                        //--------------
-                                        //- BAR CHART -
-                                        //--------------
-                                        var dailyarryPro7 = {{@json_encode($dailypro7) }};
-                                        var dailyarryRej7 = {{@json_encode($dailyRej7) }};
+                    <span class="monthly-chart-record">Monthly Chart records</span>  
+                          <form action="{{route('chartsinput')}}" method="post">
+                            @csrf
+                            <input type="text" placeholder="Choose Year" class="product-input" name="year">
+                            <button type="submit" class="add-announce-btn">Submit</button> <span>Year:{{$year}}</span>
+                          </form> <br>
 
-                                        // Get context with jQuery - using jQuery's .get() method.
-                                        var barChartCanvas = $('#barChartdaily7').get(0).getContext('2d')
+                          <canvas id="barChart7" ></canvas>
+                          <div class="chart-desc">
+                            <div class="chart-desc-inner">
+                                  <span>Product 07</span>
+                                <div class="min" >Min:{{number_format($min7)}}</div>
+                                <div class="min">Max:{{number_format($maximum7)}}</div>
+                                <div class="min" >Avg:{{round($avgpro7,2)}}</div>
+                                <div class="min">Total:{{number_format($tatalProductRec7)}}</div>
 
-                                        var barChartData = {
-                                          labels  : ['Day 01', 'Day 02', 'Day 03', 'Day 04', 'Day 05', 'Day 06', 'Day 07','Day 08','Day 09','Day 10','Day 11','Day 12','Day 13', 'Day 14', 'Day 15', 'Day 16', 'Day 17', 'Day 18', 'Day 19','Day 20','Day 21','Day 22','Day 23','Day 24','Day 25','Day 26','Day 27','Day 28','Day 29','Day 30','Day 31'],
-                                          datasets: [
-                                            {
-                                              label               : 'Product 01',
-                                              backgroundColor     : 'green',
-                                              borderColor         : 'rgba(60,141,188,0.8)',
-                                              pointRadius          : false,
-                                              pointColor          : '#3b8bba',
-                                              pointStrokeColor    : 'rgba(60,141,188,1)',
-                                              pointHighlightFill  : '#fff',
-                                              pointHighlightStroke: 'rgba(60,141,188,1)',
-                                              data                : dailypro7
-                                            },
-                                            {
-                                              label               : 'Rejects 01',
-                                              backgroundColor     : 'red',
-                                              borderColor         : 'rgba(210, 214, 222, 1)',
-                                              pointRadius         : false,
-                                              pointColor          : 'rgba(210, 214, 222, 1)',
-                                              pointStrokeColor    : '#c1c7d1',
-                                              pointHighlightFill  : '#fff',
-                                              pointHighlightStroke: 'rgba(220,220,220,1)',
-                                              data                :dailyRej7
-                                            },
-                                            
-                                          ]
-                                        }
+                                <span>Rejects 07</span>
 
-                                        var barChartOptions = {
-                                          responsive              : false,
-                                          maintainAspectRatio     : false,
-                                          datasetFill             : false,
-                                          scales:{
-                                            yAxes:[{
-                                              ticks:{
-                                                fontColor:'white',
-                                              },
-                                            }],
-                                            xAxes:[{
-                                              ticks:{
-                                                fontColor:'white',
-                                              },
-                                            }],
-                                            },
-                                          title:{
-                                            display:true,
-                                            text:['Produt 01 vs Rejects 01 vs Time','Source:Berger Management System'],
-                                            fontSize:18,
-                                            fontColor:'white',
-                                          },
-                                          subtitle:{
-                                            display:true,
-                                            text:'subtitle'
-                                          },
-                                          legend:{
-                                            display:true,
-                                            position:'top',
-                                            labels:{
-                                              fontColor:'white',
-                                            }
-                                          }
-                                        }
-                                        // This will get the first returned node in the jQuery collection.
-                                        new Chart(barChartCanvas, {
-                                          type: 'bar',
-                                          data: barChartData,
-                                          options: barChartOptions
-                                        });
-                                      });
-                                    </script>
+                                <div class="min" >Min:{{$minrej7}}</div>
+                                <div class="min">Max:{{number_format($maximumrej7)}}</div>
+                                <div class="min" >Avg:{{round($avgrej7,2)}}</div>
+                                <div class="min">Total:{{number_format($tatalRejectRec7)}}</div>
+                            </div>                
+                          </div>
+                      <!-- PRODUCT SEVEN DAILY -->
+                          
+                      <script>
+                          $(function () {
+                            /* ChartJS
+                            * -------
+                            * Here we will create a few charts using ChartJS
+                            */
 
-                       <!-- PRODUCT SEVEN MONTHLY -->
-                       <script>
-                            $(function () {
-                              /* ChartJS
-                              * -------
-                              * Here we will create a few charts using ChartJS
-                              */
+                            //--------------
+                            //- BAR CHART -
+                            //--------------
+                            var dailyarryPro7 = {{@json_encode($dailypro7) }};
+                            var dailyarryRej7 = {{@json_encode($dailyRej7) }};
 
-                              //--------------
-                              //- BAR CHART -
-                              //--------------
-                              var arrayproduct7 = {{@json_encode($ProductRec7) }};
-                              var arrayrej7 = {{@json_encode($RejectRec7) }};
+                            // Get context with jQuery - using jQuery's .get() method.
+                            var barChartCanvas = $('#barChartdaily7').get(0).getContext('2d')
 
-                              // Get context with jQuery - using jQuery's .get() method.
-                              var barChartCanvas = $('#barChart7').get(0).getContext('2d')
-
-                              var barChartData = {
-                                labels  : ['January', 'February', 'March', 'April', 'May', 'June', 'July','August','September','October','November','December'],
+                            var barChartData = {
+                              labels  : ['Day 01', 'Day 02', 'Day 03', 'Day 04', 'Day 05', 'Day 06', 'Day 07','Day 08','Day 09','Day 10','Day 11','Day 12','Day 13', 'Day 14', 'Day 15', 'Day 16', 'Day 17', 'Day 18', 'Day 19','Day 20','Day 21','Day 22','Day 23','Day 24','Day 25','Day 26','Day 27','Day 28','Day 29','Day 30','Day 31'],
+                              datasets: [
+                                {
+                                  label               : 'Product 01',
+                                  backgroundColor     : 'green',
+                                  borderColor         : 'rgba(60,141,188,0.8)',
+                                  pointRadius          : false,
+                                  pointColor          : '#3b8bba',
+                                  pointStrokeColor    : 'rgba(60,141,188,1)',
+                                  pointHighlightFill  : '#fff',
+                                  pointHighlightStroke: 'rgba(60,141,188,1)',
+                                  data                : dailyarryPro7
+                                },
+                                {
+                                  label               : 'Rejects 01',
+                                  backgroundColor     : 'red',
+                                  borderColor         : 'rgba(210, 214, 222, 1)',
+                                  pointRadius         : false,
+                                  pointColor          : 'rgba(210, 214, 222, 1)',
+                                  pointStrokeColor    : '#c1c7d1',
+                                  pointHighlightFill  : '#fff',
+                                  pointHighlightStroke: 'rgba(220,220,220,1)',
+                                  data                :dailyarryRej7
+                                },
                                 
-                                datasets: [
-                                  { 
-                                    label               : 'Product 01',
-                                    backgroundColor     : 'green',
-                                    borderColor         : 'rgba(60,141,188,0.8)',
-                                    pointRadius         : false,
-                                    pointColor          : '#3b8bba',
-                                    pointStrokeColor    : 'rgba(60,141,188,1)',
-                                    pointHighlightFill  : '#fff',
-                                    pointHighlightStroke: 'rgba(60,141,188,1)',
-                                    data                : arrayproduct7
-                                  },
-                                  {
-                                    label               : 'Rejects 01',
-                                    backgroundColor     : 'red',
-                                    borderColor         : 'rgba(210, 214, 222, 1)',
-                                    pointRadius         : false,
-                                    pointColor          : 'rgba(210, 214, 222, 1)',
-                                    pointStrokeColor    : '#c1c7d1',
-                                    pointHighlightFill  : '#fff',
-                                    pointHighlightStroke: 'rgba(220,220,220,1)',
-                                    data                :arrayrej7
-                                  },
-                              
-                                  
-                                ]
-                              }
+                              ]
+                            }
 
-                              var barChartOptions = {
-                                responsive              : false,
-                                maintainAspectRatio     : false,
-                                datasetFill             : false,
-                                scales:{
-                                  yAxes:[{
-                                    ticks:{
-                                      fontColor:'white',
-                                    },
-                                  }],
-                                  xAxes:[{
-                                    ticks:{
-                                      fontColor:'white',
-                                    },
-                                  }],
-                                  },
-                                title:{
-                                  display:true,
-                                  text:['Rejects 01 vs Products 01 vs Time','Source:Berger Management System'],
-                                  fontSize:18,
-                                  fontColor:'white',
-                                },
-                                subtitle:{
-                                  display:true,
-                                  text:'subtitle'
-                                },
-                                legend:{
-                                  display:true,
-                                  position:'top',
-                                  labels:{
+                            var barChartOptions = {
+                              responsive              : false,
+                              maintainAspectRatio     : false,
+                              datasetFill             : false,
+                              scales:{
+                                yAxes:[{
+                                  ticks:{
                                     fontColor:'white',
-                                  }
+                                  },
+                                }],
+                                xAxes:[{
+                                  ticks:{
+                                    fontColor:'white',
+                                  },
+                                }],
+                                },
+                              title:{
+                                display:true,
+                                text:['Produt 01 vs Rejects 01 vs Time','Source:Berger Management System'],
+                                fontSize:18,
+                                fontColor:'white',
+                              },
+                              subtitle:{
+                                display:true,
+                                text:'subtitle'
+                              },
+                              legend:{
+                                display:true,
+                                position:'top',
+                                labels:{
+                                  fontColor:'white',
                                 }
                               }
-                              // This will get the first returned node in the jQuery collection.
-                              new Chart(barChartCanvas, {
-                                type: 'bar',
-                                data: barChartData,
-                                options: barChartOptions
-                              });
+                            }
+                            // This will get the first returned node in the jQuery collection.
+                            new Chart(barChartCanvas, {
+                              type: 'bar',
+                              data: barChartData,
+                              options: barChartOptions
                             });
+                          });
                         </script>
+
+           <!-- PRODUCT SEVEN MONTHLY -->
+           <script>
+                $(function () {
+                  /* ChartJS
+                  * -------
+                  * Here we will create a few charts using ChartJS
+                  */
+
+                  //--------------
+                  //- BAR CHART -
+                  //--------------
+                  var arrayproduct7 = {{@json_encode($ProductRec7) }};
+                  var arrayrej7 = {{@json_encode($RejectRec7) }};
+
+                  // Get context with jQuery - using jQuery's .get() method.
+                  var barChartCanvas = $('#barChart7').get(0).getContext('2d')
+
+                  var barChartData = {
+                    labels  : ['January', 'February', 'March', 'April', 'May', 'June', 'July','August','September','October','November','December'],
+                    
+                    datasets: [
+                      { 
+                        label               : 'Product 01',
+                        backgroundColor     : 'green',
+                        borderColor         : 'rgba(60,141,188,0.8)',
+                        pointRadius         : false,
+                        pointColor          : '#3b8bba',
+                        pointStrokeColor    : 'rgba(60,141,188,1)',
+                        pointHighlightFill  : '#fff',
+                        pointHighlightStroke: 'rgba(60,141,188,1)',
+                        data                : arrayproduct7
+                      },
+                      {
+                        label               : 'Rejects 01',
+                        backgroundColor     : 'red',
+                        borderColor         : 'rgba(210, 214, 222, 1)',
+                        pointRadius         : false,
+                        pointColor          : 'rgba(210, 214, 222, 1)',
+                        pointStrokeColor    : '#c1c7d1',
+                        pointHighlightFill  : '#fff',
+                        pointHighlightStroke: 'rgba(220,220,220,1)',
+                        data                :arrayrej7
+                      },                                        
+                    ]
+                  }
+
+                  var barChartOptions = {
+                    responsive              : false,
+                    maintainAspectRatio     : false,
+                    datasetFill             : false,
+                    scales:{
+                      yAxes:[{
+                        ticks:{
+                          fontColor:'white',
+                        },
+                      }],
+                      xAxes:[{
+                        ticks:{
+                          fontColor:'white',
+                        },
+                      }],
+                      },
+                    title:{
+                      display:true,
+                      text:['Rejects 01 vs Products 01 vs Time','Source:Berger Management System'],
+                      fontSize:18,
+                      fontColor:'white',
+                    },
+                    subtitle:{
+                      display:true,
+                      text:'subtitle'
+                    },
+                    legend:{
+                      display:true,
+                      position:'top',
+                      labels:{
+                        fontColor:'white',
+                      }
+                    }
+                  }
+                  // This will get the first returned node in the jQuery collection.
+                  new Chart(barChartCanvas, {
+                    type: 'bar',
+                    data: barChartData,
+                    options: barChartOptions
+                  });
+                });
+            </script>
+            </div>
+            </div>
             <div id="product8">
 
             <span class="product-header">Product Eight</span> <br>
@@ -1766,7 +1765,7 @@
                     </form> <br>
 
                     <canvas id="barChartdaily8" ></canvas>
-                    <div class="daily-chart-desc">
+                  <div class="daily-chart-desc">
                     <div class="chart-desc-inner">
                           <span>Product 08</span>
                         <div class="min" >Min:{{number_format($dailypromin8)}}</div>
@@ -1781,8 +1780,9 @@
                         <div class="min" >Avg:{{round($dailyavgrej8,2)}}</div>
                         <div class="min">Total:{{number_format($dailytotalrej8)}}</div>
                     </div>
-                    </div>
+                  </div>
                 </div>
+
                 <div class="monthly-chart-div">
 
                 <span class="monthly-chart-record">Monthly Chart records</span>  
@@ -1807,11 +1807,8 @@
                             <div class="min">Max:{{number_format($maximumrej8)}}</div>
                             <div class="min" >Avg:{{round($avgrej8,2)}}</div>
                             <div class="min">Total:{{number_format($tatalRejectRec8)}}</div>
-                         </div>
-
-                      </div>
-                
-                 </div>
+                         </div>                
+                       </div>
                   <!-- PRODUCT EIGHT DAILY -->
                       
                   <script>
@@ -1842,7 +1839,7 @@
                                               pointStrokeColor    : 'rgba(60,141,188,1)',
                                               pointHighlightFill  : '#fff',
                                               pointHighlightStroke: 'rgba(60,141,188,1)',
-                                              data                : dailypro8
+                                              data                : dailyarryPro8
                                             },
                                             {
                                               label               : 'Rejects 01',
@@ -1853,7 +1850,7 @@
                                               pointStrokeColor    : '#c1c7d1',
                                               pointHighlightFill  : '#fff',
                                               pointHighlightStroke: 'rgba(220,220,220,1)',
-                                              data                :dailyRej8
+                                              data                :dailyarryRej8
                                             },
                                             
                                           ]
@@ -1992,7 +1989,8 @@
                               });
                             });
                         </script>
-                
+                </div>
+                </div>
             <div id="product9">
 
             <span class="product-header">Product Nine</span> <br>
@@ -2037,7 +2035,7 @@
                          <button type="submit" class="add-announce-btn">Submit</button> <span>Year:{{$year}}</span>
                        </form> <br>
 
-                       <canvas id="barChart8" ></canvas>
+                       <canvas id="barChart9" ></canvas>
                        <div class="chart-desc">
                          <div class="chart-desc-inner">
                               <span>Product 09</span>
@@ -2053,6 +2051,7 @@
                             <div class="min" >Avg:{{round($avgrej9,2)}}</div>
                             <div class="min">Total:{{number_format($tatalRejectRec9)}}</div>
                          </div>
+                         </div>
  <!-- PRODUCT NINE DAILY -->
                       
  <script>
@@ -2065,8 +2064,8 @@
                                         //--------------
                                         //- BAR CHART -
                                         //--------------
-                                        var dailyarryPro9 = {{@json_encode($ProductRec9) }};
-                                        var dailyarryRej9 = {{@json_encode($RejectRec9) }};
+                                        var dailyarryPro9 = {{@json_encode($dailypro9) }};
+                                        var dailyarryRej9 = {{@json_encode($dailyRej9) }};
 
                                         // Get context with jQuery - using jQuery's .get() method.
                                         var barChartCanvas = $('#barChartdaily9').get(0).getContext('2d')
@@ -2233,6 +2232,8 @@
                               });
                             });
                         </script>
+                        </div>
+                        </div>
                 
             <div id="product10">
 
@@ -2295,6 +2296,7 @@
                             <div class="min" >Avg:{{round($avgrej10,2)}}</div>
                             <div class="min">Total:{{number_format($tatalRejectRec10)}}</div>
                          </div>
+                       </div>
                           <!-- PRODUCT TEN DAILY -->
                       
                           <script>

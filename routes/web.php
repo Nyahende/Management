@@ -51,6 +51,21 @@ Route::post('addrej8',[rejectsController::class,'addrej8'])->name('addrej8');
 Route::post('addrej9',[rejectsController::class,'addrej9'])->name('addrej9');
 Route::post('addrej10',[rejectsController::class,'addrej10'])->name('addrej10');
 
+Route::get('deleteproduct/{id}',[productsController::class,'deleteproduct']);
+Route::get('deletereject/{id}',[rejectsController::class,'deletereject']);
+
+Route::get('editproduct/{id}',[productsController::class,'editproduct']);
+Route::post('updateproduct',[productsController::class,'updateproduct'])->name('updateproduct');
+Route::get('editproduct2/{id}',[productsController::class,'editproduct2']);
+Route::get('editproduct3/{id}',[productsController::class,'editproduct3']);
+Route::get('editproduct4/{id}',[productsController::class,'editproduct4']);
+Route::get('editproduct5/{id}',[productsController::class,'editproduct5']);
+Route::get('editproduct6/{id}',[productsController::class,'editproduct6']);
+Route::get('editproduct7/{id}',[productsController::class,'editproduct7']);
+Route::get('editproduct8/{id}',[productsController::class,'editproduct8']);
+Route::get('editproduct9/{id}',[productsController::class,'editproduct9']);
+Route::get('editproduct10/{id}',[productsController::class,'editproduct10']);
+
 
 
 

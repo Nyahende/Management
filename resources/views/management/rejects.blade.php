@@ -46,6 +46,11 @@
                             {{Session::get('addreject1')}}
                         </div>
                     @endif
+                    @if(Session::get('deletereject'))
+                  <div class="product-success">
+                    {{Session::get('deletereject')}}
+                  </div>
+                @endif
                 <div class="add-product-form">
                     <form action="{{route('addrej1')}}" method="post">
                        @csrf
@@ -75,7 +80,7 @@
                     <td>{{$item->Quantity}}</td>
                     <td>{{$item->Approval}}</td>
                     <td>Edit</td>
-                    <td>Delete</td>
+                    <td><a href="{{'deletereject/'.$item->id}}">Delete</a></td>
                 </tr>    
             @endforeach     
             
@@ -114,7 +119,7 @@
                     <td>{{$item->Quantity}}</td>
                     <td>{{$item->Approval}}</td>
                     <td>Edit</td>
-                    <td>Delete</td>
+                    <td><a href="{{'deletereject/'.$item->id}}">Delete</a></td>
                 </tr>    
             @endforeach   
             
@@ -153,7 +158,7 @@
                     <td>{{$item->Quantity}}</td>
                     <td>{{$item->Approval}}</td>
                     <td>Edit</td>
-                    <td>Delete</td>
+                    <td><a href="{{'deletereject/'.$item->id}}">Delete</a></td>
                 </tr>    
             @endforeach   
             
@@ -192,7 +197,7 @@
                     <td>{{$item->Quantity}}</td>
                     <td>{{$item->Approval}}</td>
                     <td>Edit</td>
-                    <td>Delete</td>
+                    <td><a href="{{'deletereject/'.$item->id}}">Delete</a></td>
                 </tr>    
             @endforeach    
             
@@ -232,7 +237,7 @@
                     <td>{{$item->Quantity}}</td>
                     <td>{{$item->Approval}}</td>
                     <td>Edit</td>
-                    <td>Delete</td>
+                    <td><a href="{{'deletereject/'.$item->id}}">Delete</a></td>
                 </tr>    
             @endforeach  
             
@@ -272,7 +277,7 @@
                     <td>{{$item->Quantity}}</td>
                     <td>{{$item->Approval}}</td>
                     <td>Edit</td>
-                    <td>Delete</td>
+                    <td><a href="{{'deletereject/'.$item->id}}">Delete</a></td>
                 </tr>    
             @endforeach    
             
@@ -312,7 +317,7 @@
                     <td>{{$item->Quantity}}</td>
                     <td>{{$item->Approval}}</td>
                     <td>Edit</td>
-                    <td>Delete</td>
+                    <td><a href="{{'deletereject/'.$item->id}}">Delete</a></td>
                 </tr>    
             @endforeach    
             
@@ -352,7 +357,7 @@
                     <td>{{$item->Quantity}}</td>
                     <td>{{$item->Approval}}</td>
                     <td>Edit</td>
-                    <td>Delete</td>
+                    <td><a href="{{'deletereject/'.$item->id}}">Delete</a></td>
                 </tr>    
             @endforeach   
             
@@ -392,7 +397,7 @@
                     <td>{{$item->Quantity}}</td>
                     <td>{{$item->Approval}}</td>
                     <td>Edit</td>
-                    <td>Delete</td>
+                    <td><a href="{{'deletereject/'.$item->id}}">Delete</a></td>
                 </tr>    
             @endforeach   
             
@@ -432,7 +437,7 @@
                     <td>{{$item->Quantity}}</td>
                     <td>{{$item->Approval}}</td>
                     <td>Edit</td>
-                    <td>Delete</td>
+                    <td><a href="{{'deletereject/'.$item->id}}">Delete</a></td>
                 </tr>    
             @endforeach   
             
