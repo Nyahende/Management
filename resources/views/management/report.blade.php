@@ -25,25 +25,41 @@
 
     <div class="reporting-div">
 
-    <span>Monthly Report:</span>
-
-    <form action="" method="post">
-
-    <input type="text" class="report-input" placeholder="Choose a Year"><br>
-    <input type="text" class="report-input" placeholder="Choose a Month"><br>
-    <button class="add-announce-btn" >Select</button>
-    </form>
-    </div> <hr>
+    <span>Monthly Report:</span> <br>
+    <div class="report-froms">
+        <div class="first-report-form">
+            <form action="" method="post">
+                @csrf
+                <input type="text" class="report-input" placeholder="Choose a Year"><br>
+                <input type="text" class="report-input" placeholder="Choose a Month"><br>
+                <button class="add-announce-btn" >View</button>
+            </form>
+        </div>
+        <div class="second-report-form">
+            <form action="" method="post">
+                <input type="text" class="report-input" placeholder="Choose a Year"><br>
+                <input type="text" class="report-input" placeholder="Choose a Month"><br>
+                <button class="add-announce-btn" >Download</button>
+            </form>
+        </div>
+    </div>
+    </div> 
+    <hr>
 
     <div class="reporting-div">
-
-    <span>Yearly Report:</span>
-
-    <form action="" method="post">
-
-    <input type="text" class="report-input" placeholder="Choose a Year"><br>
-    <button class="add-announce-btn" >Select</button>
-    </form>
+    <span>Yearly Report:</span> <br>
+    <div class="report-froms">
+        <form action="{{route('yearlyreportview')}}" method="post">
+            @csrf
+        <input type="text" class="report-input" placeholder="Choose a Year" name="yearlyreportview"><br>
+        <button class="add-announce-btn" type="submit">View</button>
+        </form>
+        <form action="{{route('yearlyreportdownload')}}" method="post">
+            @csrf
+        <input type="text" class="report-input" placeholder="Choose a Year" name="yearlyreportview"><br>
+        <button class="add-announce-btn" type="submit">Download</button>
+        </form>
+    </div>
     </div>
 </div>
 

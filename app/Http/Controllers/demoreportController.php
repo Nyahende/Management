@@ -4,20 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
-use PDF;
 
-class reportController extends Controller
+class demoreportController extends Controller
 {
-    public function report()
-    {
-        return view('management.report');
-    }
-
-    public function yearlyreportview(Request $request)
+    public function demoreport()
     {
         $YearProduct= [];
         for ($i=1; $i<=12; $i++) {
-        $year = $request->yearlyreportview;
+        $year = 2022;
         $data1 = DB::table('products')
                         ->whereYear('created_at', $year)                  
                         ->whereMonth('created_at', $i)
@@ -33,7 +27,7 @@ class reportController extends Controller
 
         $YearReject= [];
         for ($i=1; $i<=12; $i++) {
-        $year = $request->yearlyreportview;
+        $year = 2022;
         $datarej1 = DB::table('rejects')
                         ->whereYear('created_at', $year)                  
                         ->whereMonth('created_at', $i)
@@ -47,13 +41,7 @@ class reportController extends Controller
 
         }
 
-       $pdf = PDF::loadView('management.reportdownload',compact('year','yearavgrej','TotalYearReject',
-       'yearminrej','yearmaximumrej','YearReject','yearavgpro','TotalYearProduct','yearminpro',
-       'yearmaximumpro','YearProduct'));
-
-       $pdf->setPaper('A4', 'potrait');
-
-       return $pdf->stream('Report.pdf');
-       
+        return view('management.demoreport',compact('year','yearavgrej','TotalYearReject','yearminrej','yearmaximumrej','YearReject',
+        'yearavgpro','TotalYearProduct','yearminpro','yearmaximumpro','YearProduct'));
     }
 }

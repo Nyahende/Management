@@ -8,6 +8,7 @@ use App\Http\Controllers\chartsController;
 use App\Http\Controllers\reportController;
 use App\Http\Controllers\forumController;
 use App\Http\Controllers\announcementsController;
+use App\Http\Controllers\demoreportController;
 
 /*
 |--------------------------------------------------------------------------
@@ -66,15 +67,18 @@ Route::get('editproduct8/{id}',[productsController::class,'editproduct8']);
 Route::get('editproduct9/{id}',[productsController::class,'editproduct9']);
 Route::get('editproduct10/{id}',[productsController::class,'editproduct10']);
 
+Route::post('yearly-report-view',[reportController::class,'yearlyreportview'])->name('yearlyreportview');
+Route::post('yearly-report-download',[reportController::class,'yearlyreportdownload'])->name('yearlyreportdownload');
+
+
+Route::get('demoreport',[demoreportController::class,'demoreport']);
+Route::post('send-text',[forumController::class,'addtext']);
+Route::get('fetch-texts',[forumController::class,'fetchtexts']);
 
 
 
 
 
-
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Auth::routes();
 

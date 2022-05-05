@@ -18,6 +18,9 @@
 .policy-header-div{
     margin-left:100px;
 }
+.yearly-header-div{
+    margin-left:60px;
+}
 .logo{
     height: 80px;
     width:80px;
@@ -239,9 +242,28 @@
     height:350px;
     width:800px;
 }
+
+.single-text-div{
+    border:1px solid white;
+    width:650px;
+    height:auto;
+    margin-top:20px;
+    margin-left:10px;
+    padding:10px;
+    background-color: black; 
+    word-wrap:break-word;
+    border-radius: 10px;
+}
+.sender_name{
+    margin-left: 10px;
+    margin-bottom: -20px;
+}
 #barChart8{
     height:350px;
     width:800px;
+}
+.report-froms{
+    display:inline-flex;
 }
 #barChartdaily9{
     margin-top:-20px;
@@ -465,6 +487,13 @@ overflow-y: scroll;
     border:3px solid white;
     margin:10px;
     border-radius: 20px;
+    overflow-y: scroll;
+}
+.text-time{
+    height:20px;
+    width:400px;
+    margin-bottom: 10px;
+    margin-left:10px;
 }
 .forum-form{
     margin:10px;
