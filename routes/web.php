@@ -9,6 +9,9 @@ use App\Http\Controllers\reportController;
 use App\Http\Controllers\forumController;
 use App\Http\Controllers\announcementsController;
 use App\Http\Controllers\demoreportController;
+use App\Http\Controllers\loginController;
+use App\Http\Controllers\registerController;
+use App\Http\Controllers\frontController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +23,8 @@ use App\Http\Controllers\demoreportController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::group(['middleware'=>['auth']], function(){
+
 
 Route::get('index',[indexController::class,'index'])->name('index');
 Route::get('released-products',[productsController::class,'products'])->name('products');
@@ -75,11 +80,18 @@ Route::get('demoreport',[demoreportController::class,'demoreport']);
 Route::post('send-text',[forumController::class,'addtext']);
 Route::get('fetch-texts',[forumController::class,'fetchtexts']);
 
+Route::get('profilepicture/{id}',[indexController::class,'profilepicture']);
+Route::post('updateprofile',[indexController::class,'updateprofile'])->name('updateprofile');
 
+
+
+});
+
+Route::get('/',[frontController::class,'front']);
 
 
 
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -13,25 +13,21 @@
 
     <div class="login-form-outside-div">
 
-        <form action="{{ route('login') }}" method="post">
+        <form action="" method="post">
             @csrf
             <div class="login-form-inner-div">
               <span class="login-header">Login Form</span><br>
 
 
-              <input type="text" placeholder="Email" name="email" class="auth-input" value="{{ old('email') }}"> <br>
-              <span class="signup-form-error">@error('email'){{$message}}@enderror</span> <br>
-
-              <input type="password" placeholder="Password" name="password" class="auth-input"><br>
-              <span class="signup-form-error">@error('password'){{$message}}@enderror</span> <br>
-
+              <input type="text" placeholder="Email" name="email" class="auth-input"> <br>
+              <input type="text" placeholder="Password" name="email" class="auth-input"><br>
               <button type="submit" class="login-btn">Login</button>
               <div class="auth-links">
                   <div class="forgot-link">
                   <a href="" >Forgot Password?</a>
                   </div> <br>
                   <div class="dont-have-link">
-                  <a href="register" >Don't have an acount?</a>
+                  <a href="" >Don't have an aacount?</a>
                   </div>
               </div>
             </div>

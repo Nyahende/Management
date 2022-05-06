@@ -9,7 +9,6 @@
 
 <body>
     @include('management.loginheader')
-
     <div class="login-body">
 
     <div class="login-form-outside-div">
@@ -20,19 +19,18 @@
               <span class="login-header">Register Form</span><br>
 
 
-              <input type="text" placeholder="First Name" name="firstname" class="register-input" value="{{ old('firstname') }}"> <br>
+              <input type="text" placeholder="First Name" name="firstname" class="register-input"> <br>
               <span class="signup-form-error">@error('firstname'){{$message}}@enderror</span> <br>
-
-              <input type="text" placeholder="Last Name" name="lastname" class="register-input" value="{{ old('lastname') }}"> <br>
+              <input type="text" placeholder="Last Name" name="lastname" class="register-input"> <br>
               <span class="signup-form-error">@error('lastname'){{$message}}@enderror</span> <br>
 
-              <input type="text" placeholder="Department" name="department" class="register-input" value="{{ old('department') }}"> <br>
+              <input type="text" placeholder="Department" name="department" class="register-input"> <br>
               <span class="signup-form-error">@error('department'){{$message}}@enderror</span> <br>
 
-              <input type="text" placeholder="Position" name="position" class="register-input" value="{{ old('position') }}"> <br>
+              <input type="text" placeholder="Position" name="position" class="register-input"> <br>
               <span class="signup-form-error">@error('position'){{$message}}@enderror</span> <br>
 
-              <input type="text" placeholder="Email" name="email" class="register-input" value="{{ old('email') }}"> <br>
+              <input type="text" placeholder="Email" name="email" class="register-input"> <br>
               <span class="signup-form-error">@error('email'){{$message}}@enderror</span> <br>
 
               <input type="password" placeholder="Password" name="password" class="register-input"><br>

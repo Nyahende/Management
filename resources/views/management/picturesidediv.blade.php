@@ -20,7 +20,6 @@
             </span> <br><br>
             <span>Department: <br> {{Auth::user()->department}}</span> <br><br>
             <span>Position: <br> {{Auth::user()->position}}</span>
-            <div class="profile-picture-words"><a href="profilepicture/{{Auth::user()->id}}"> Profile Picture</a></div>
         </div>
     </div>
     <hr>

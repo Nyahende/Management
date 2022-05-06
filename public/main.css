@@ -21,12 +21,31 @@
 .yearly-header-div{
     margin-left:60px;
 }
+.logout{
+    margin-left:690px;
+    height:30px;
+    width:100px;
+    text-align:center;
+
+    background-color:black;
+    border:1px solid black;
+    border-radius:5px;
+    font-size: 18px;
+}
+.logout:hover{
+    background-color: rgb(165, 161, 161);
+    cursor:pointer;
+}
 .logo{
     height: 80px;
     width:80px;
     border:1px solid white;
     margin-left: 20px;
     margin-bottom: -50px;
+}
+.logo img{
+    height: 80px;
+    width:80px;
 }
 .side-div{
     border:1px solid black;
@@ -59,6 +78,71 @@
     width:725px;
     background-color: rgb(13, 13, 88);
 }
+.login-body{
+    width:100%;
+    background-color: rgb(13, 13, 88);
+    height:480px;
+}
+.front-register-text{
+    margin-top:30px;
+    margin-left:100px;
+}
+.front-btns-div{
+    margin-left:180px;
+    margin-top:30px;
+}
+.front-btns-div button{
+    width:100px;
+    background-color: black;
+    height:30px;
+    margin:10px;
+    border-radius: 10px;
+    border:1px solid black;
+    border-radius:5px;
+    font-size: 18px;
+}
+.add-profile-picture-btn{
+    width:200px;
+    background-color: black;
+    height:30px;
+    margin:10px;
+    border-radius: 10px;
+    border:1px solid black;
+    border-radius:5px;
+    font-size: 18px;
+}
+.add-profile-picture-btn:hover{
+    background-color: rgb(73, 69, 69);
+    cursor: pointer;
+}
+.front-btns-div button:hover{
+    background-color: rgb(73, 69, 69);
+    cursor: pointer;
+}
+.front-welcome-words{
+    margin:10px;
+    float:right;
+    width:590px;
+    margin-top:-440px;
+    margin-right: 10px;
+    height:300px;
+    font-size: 35px;
+}
+.front-slide-div{
+    border:1px solid white;
+    width:700px;
+    height:440px;
+    margin-left:20px;
+}
+.front-slide-div img{
+    width:700px;
+    height:440px;
+}
+.front-page-body{
+    width:100%;
+    background-color: rgb(13, 13, 88);
+    height:480px;
+}
 .products-div{
     border:1px solid black;
     margin-left:310px;
@@ -68,17 +152,109 @@
     background-color: rgb(13, 13, 88);
 }
 .footer{
-    border:1px solid black;
-    width:1344px;
     height:200px;
-    margin-top:10px;
+    margin-top:5px;
     background-color: rgb(73, 69, 69);
+    width:100%;
+}
+.login-form-inner-div{
+    border:1px solid white;
+    width:500px;
+    height:300px;
+    padding-top: 70px;
+    border-radius:20px;
+}
+.register-form-inner-div{
+    border:1px solid white;
+    width:500px;
+    height:450px;
+    padding-top: 10px;
+    border-radius:20px;
+}
+.login-form-outside-div{
+    text-align: center;
+    width:200px;
+    margin-left:400px;
     
+}
+.auth-input{
+    background-color: transparent;
+    text-align: center;
+    padding:5px;
+    border-radius:20px;
+    margin:10px;
+    border:1px solid white;
+    width:350px;
+    font-size:20px;
+}
+.register-input{
+    background-color: transparent;
+    text-align: center;
+    border-radius:20px;
+    margin:2px;
+    border:1px solid white;
+    width:350px;
+    font-size:15px;
+    height:25px;
+
+}
+.login-btn{
+    width:350px;
+    height:40px;
+    background-color: black;
+    border-radius:20px;
+    color:white;
+    font-size:20px;
+    border:1px solid white;
+}
+.register-btn{
+    width:350px;
+    height:30px;
+    background-color: black;
+    border-radius:20px;
+    color:white;
+    font-size:15px;
+    border:1px solid white;
+    margin-top:5px;
+}
+.signup-form-error{
+    font-style: italic;
+    color:red;
+    font-weight: lighter;
+}
+.login-btn:hover{
+    background-color: rgb(73, 69, 69);
+    cursor: pointer;
+}
+.login-header{
+    font-size: 22px;
+}
+.auth-links{
+    margin-top:10px;
+}
+.auth-links a:hover{
+    color: red; 
+}
+.forgot-link{
+    margin-top:10px;
+}
+.auth-input::placeholder{
+    text-align: center;
+    font-weight: lighter;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:20px;
+}
+.register-input::placeholder{
+    text-align: center;
+    font-weight: lighter;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:15px;
 }
 .tabbedul ul{
     list-style: none;
     background-color: black;
-
 }
 .tabbedul ul li a{
     text-decoration: none;
@@ -350,11 +526,22 @@
     width:150px;
     height:150px;
     margin-left: 5px;
+    border-radius: 50%;
+}
+.profile-picture-form{
+    margin-top:100px;
+    margin-left:100px;
+}
+.profile-picture-words{
+     margin-top: 10px; 
+     margin-left:-100px;
+}
+.profile-picture-words a:hover{
+    color:red;
 }
 .the-profile-photo{
     border:1px solid black;
     border-radius: 50%;
-
 }
 .profile-desc{
     width:140px;
@@ -494,6 +681,9 @@ overflow-y: scroll;
     width:400px;
     margin-bottom: 10px;
     margin-left:10px;
+}
+.login-body{
+    width:100%;
 }
 .forum-form{
     margin:10px;

@@ -15,7 +15,8 @@ class CreateRejectsTable extends Migration
     {
         Schema::create('rejects', function (Blueprint $table) {
             $table->id();
-            $table->integer('Quantity');
+            $table->string('Quantity');
+            $table->string('Reject_Name');
             $table->string('Approval');
             $table->timestamps();
         });
