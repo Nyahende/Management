@@ -1,3 +1,11 @@
+
+
+
+
+/* FOR DESKTOPS */
+/* 
+@media only screen and (min-width: 769px) {
+
 *{
     padding:0px;
     margin:0px;
@@ -110,6 +118,10 @@
     border:1px solid black;
     border-radius:5px;
     font-size: 18px;
+}
+.email-sent-message{
+    color:red;
+    font-style: italic;
 }
 .add-profile-picture-btn:hover{
     background-color: rgb(73, 69, 69);
@@ -498,7 +510,6 @@
 .footer-list-ul ul{
     display: inline-flex;
     list-style: none;
-
 }
 .footer-list-ul ul li{
     margin-top:10px;
@@ -506,7 +517,6 @@
     margin-right: 80px;
     font-size: 18px;
     list-style: none;
-
 }
 .div ul{
     display: block;
@@ -717,4 +727,116 @@ overflow-y: scroll;
 }
 .left-div ul li a{
     text-decoration: none;
+}
+} */
+
+
+
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+    *{
+        padding:0px;
+        margin:0px;
+        color:white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .div ul{
+        display: block;
+        position: absolute;
+    }
+    .div ul li{
+        margin-left:-5px;
+    }
+    .footer-header{
+        margin-left:300px;
+        padding-top:10px;
+    }
+    .footer-list-ul ul{
+        display: inline-flex;
+        list-style: none;
+    }
+    .footer-list-ul ul li{
+        margin-top:10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 15px;
+        list-style: none;
+    }
+    .footer{
+        height:300px;
+        margin-top:5px;
+        background-color: rgb(73, 69, 69);
+        width:100%;
+    }
+    .front-btns-div{
+        margin-left:20px;
+        margin-top:30px;
+        display: inline-flex;
+    }
+    .front-btns-div button{
+        width:70px;
+        background-color: black;
+        height:30px;
+        margin:10px;
+        border-radius: 10px;
+        border:1px solid black;
+        border-radius:5px;
+    }
+    .front-btns-div button:hover{
+        border:1px solid rgb(73, 69, 69);
+        cursor:pointer;
+
+    }
+    .front-register-text{
+        margin-top:10px;
+        margin-left:30px;
+    }
+    .front-welcome-words{
+        margin:10px;
+        float:right;
+        width:240px;
+        margin-top:-300px;
+        margin-right: 10px;
+        height:300px;
+        font-size: 17px;
+    }
+    .front-slide-div{
+        border:1px solid white;
+        width:500px;
+        height:300px;
+        margin-left:5px;
+    }
+    .front-slide-div img{
+        width:500px;
+        height:300px;
+    }
+    .front-page-body{
+        width:100%;
+        background-color: rgb(13, 13, 88);
+        height:430px;
+    }
+    .header{
+        width:100%;
+        background-color:rgb(73, 69, 69);
+        height:120px;
+    }
+    .header-words{
+        margin-left:200px;
+        padding-top:20px;
+        font-size:25px;
+        margin-top:-70px;
+    }
+    .policy-header-div{
+        margin-left:100px;
+    }
+    .logo{
+        height: 60px;
+        width:60px;
+        border:1px solid white;
+        margin-left: 20px;
+        margin-bottom: -50px;
+    }
+    .logo img{
+        height: 60px;
+        width:60px;
+    }
 }

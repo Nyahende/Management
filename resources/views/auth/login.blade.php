@@ -28,7 +28,7 @@
               <button type="submit" class="login-btn">Login</button>
               <div class="auth-links">
                   <div class="forgot-link">
-                  <a href="" >Forgot Password?</a>
+                  <a href="{{ route('password.request') }}" >Forgot Password?</a>
                   </div> <br>
                   <div class="dont-have-link">
                   <a href="register" >Don't have an acount?</a>
