@@ -61,16 +61,10 @@ Route::get('deleteproduct/{id}',[productsController::class,'deleteproduct']);
 Route::get('deletereject/{id}',[rejectsController::class,'deletereject']);
 
 Route::get('editproduct/{id}',[productsController::class,'editproduct']);
+Route::get('editreject/{id}',[rejectsController::class,'editreject']);
 Route::post('updateproduct',[productsController::class,'updateproduct'])->name('updateproduct');
-Route::get('editproduct2/{id}',[productsController::class,'editproduct2']);
-Route::get('editproduct3/{id}',[productsController::class,'editproduct3']);
-Route::get('editproduct4/{id}',[productsController::class,'editproduct4']);
-Route::get('editproduct5/{id}',[productsController::class,'editproduct5']);
-Route::get('editproduct6/{id}',[productsController::class,'editproduct6']);
-Route::get('editproduct7/{id}',[productsController::class,'editproduct7']);
-Route::get('editproduct8/{id}',[productsController::class,'editproduct8']);
-Route::get('editproduct9/{id}',[productsController::class,'editproduct9']);
-Route::get('editproduct10/{id}',[productsController::class,'editproduct10']);
+Route::post('updatereject',[rejectsController::class,'updatereject'])->name('updatereject');
+
 
 Route::post('yearly-report-view',[reportController::class,'yearlyreportview'])->name('yearlyreportview');
 Route::post('yearly-report-download',[reportController::class,'yearlyreportdownload'])->name('yearlyreportdownload');

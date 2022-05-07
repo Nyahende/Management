@@ -23,7 +23,6 @@
             <div class="profile-picture-words"><a href="profilepicture/{{Auth::user()->id}}"> Profile Picture</a></div>
         </div>
     </div>
-    <hr>
     <div class="released-div">
         <ul>
             <li><a href="{{route('products')}}"> Released Products</a></li> <hr>

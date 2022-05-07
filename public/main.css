@@ -76,7 +76,6 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius:10px;
-
 }
 .announcements{
     border:1px solid black;
@@ -186,8 +185,7 @@
 .login-form-outside-div{
     text-align: center;
     width:200px;
-    margin-left:400px;
-    
+    margin-left:400px;   
 }
 .auth-input{
     background-color: transparent;
@@ -208,7 +206,6 @@
     width:350px;
     font-size:15px;
     height:25px;
-
 }
 .login-btn{
     width:350px;
@@ -596,7 +593,6 @@ overflow-y: scroll;
     border-collapse: collapse;
     width:950px;
     margin:10px;
-
 }
 .announcement-table th{
     border:1px solid white;
@@ -739,16 +735,538 @@ overflow-y: scroll;
         color:white;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-    .div ul{
-        display: block;
-        position: absolute;
+    .forum-form{
+        margin:10px;
     }
-    .div ul li{
-        margin-left:-5px;
+    .add-profile-picture-btn:hover{
+        background-color: rgb(73, 69, 69);
+        cursor: pointer;
     }
-    .footer-header{
-        margin-left:300px;
+    .add-profile-picture-btn{
+        width:130px;
+        background-color: black;
+        height:30px;
+        margin:10px;
+        border-radius: 10px;
+        border:1px solid black;
+        border-radius:5px;
+        font-size: 15px;
+    }
+    .profile-picture-form{
+        margin-top:100px;
+        margin-left:50px;
+    }
+    .logout{
+        margin-left:480px;
+        height:30px;
+        width:80px;
+        text-align:center;  
+        background-color:black;
+        border:1px solid black;
+        border-radius:5px;
+        font-size: 18px;
+    }
+    .logout:hover{
+        background-color: rgb(165, 161, 161);
+        cursor:pointer;
+    }
+    .single-text-div{
+        border:1px solid white;
+        width:390px;
+        height:auto;
+        margin-top:10px;
+        margin-left:10px;
+        padding:10px;
+        background-color: black; 
+        word-wrap:break-word;
+        border-radius: 10px;
+    }
+    .forum-send-btn{
+        width:60px;
+        height:30px;
+        background-color:black;
+        border:1px solid black;
+        border-radius:20px;
+        font-size: 18px;
+    }
+    .forum-send-btn:hover{
+        cursor:pointer;
+        background-color: rgb(165, 161, 161);
+    }
+    .forum-input{
+        width:400px;
+        height:30px;
+        border-radius: 20px;
+        border:1px solid white;
+        background-color: transparent;
+    }
+    .forum-input::placeholder{
+      text-align: center;
+      color:white;
+      font-size:15px;
+      font-weight: lighter;
+      font-style: italic;
+    }
+    .forum-display-div{
+        height:310px;
+        width:430px;
+        border:2px solid white;
+        margin:10px;
+        border-radius: 20px;
+        overflow-y: scroll;
+    }
+    .reporting-title{
+        margin-left: 200px;
+        padding-top:20px;
+        font-size:20px;
+    }
+    .report-input{
+        margin:10px;
+        background-color: transparent;
+        height:30px;
+        width:150px;
+        border-radius:5px;
+        border:1px solid white;
+    }
+    .report-input::placeholder{
+        color:white;
+        text-align: center;
+    }
+    .daily-chart-desc{
+        width:197px;
+        margin-left:10px;
+        margin-top:10px;
+    }
+    #barChartdaily1{
+        margin-top:-20px;
+        height:320px;
+        width:700px;
+    }
+    #barChart1{
+        height:320px;
+        width:700px;
+    }
+    #barChartdaily2{
+        margin-top:-20px;
+        height:320px;
+        width:700px;
+    }
+    #barChart2{
+        height:320px;
+        width:700px;
+    }
+    #barChartdaily3{
+        margin-top:-20px;
+        height:320px;
+        width:700px;
+    }
+    #barChart3{
+        height:320px;
+        width:700px;
+    }
+    #barChartdaily4{
+        margin-top:-20px;
+        height:320px;
+        width:700px;
+    }
+    #barChart4{
+        height:320px;
+        width:700px;
+    }
+    #barChartdaily5{
+        margin-top:-20px;
+        height:320px;
+        width:700px;
+    }
+    #barChart5{
+        height:320px;
+        width:700px;
+    }
+    #barChartdaily6{
+        margin-top:-20px;
+        height:320px;
+        width:700px;
+    }
+    #barChart6{
+        height:320px;
+        width:700px;
+    }
+    #barChartdaily7{
+        margin-top:-20px;
+        height:320px;
+        width:700px;
+    }
+    #barChart7{
+        height:320px;
+        width:700px;
+    }
+    #barChartdaily8{
+        margin-top:-20px;
+        height:320px;
+        width:700px;
+    }
+    
+    #barChart8{
+        height:320px;
+        width:700px;
+    }
+    
+    #barChartdaily9{
+        margin-top:-20px;
+        height:320px;
+        width:700px;
+    }
+    #barChart9{
+        height:320px;
+        width:700px;
+    }
+    #barChartdaily10{
+        margin-top:-20px;
+        height:320px;
+        width:700px;
+    }
+    #barChart10{
+        height:320px;
+        width:700px;
+    }
+    .product-header{
+        margin-left:200px;
+    }
+    .monthly-chart-record{
+        margin-left:200px;
+    }
+    .product-success{
+        font-weight: lighter;
+        margin-left:200px;
+        color:greenyellow;
+    }
+    .add-product-form{
+        margin-left:10px;
+        display: none;
+    }
+    .product-input::placeholder{
+    color:white;
+    text-align: center;
+}
+    .product-input{
+        background-color: transparent;
+        height:30px;
+        border-radius: 5px;
+        border:1px solid white;
+    }
+    .add-product-form-2{
+        margin-left:10px;
+        display: none;
+    }.add-product-form-3{
+        margin-left:10px;
+        display: none;
+    }.add-product-form-4{
+        margin-left:10px;
+        display: none;
+    }.add-product-form-5{
+        margin-left:10px;
+        display: none;
+    }.add-product-form-6{
+        margin-left:10px;
+        display: none;
+    }.add-product-form-7{
+        margin-left:10px;
+        display: none;
+    }.add-product-form-8{
+        margin-left:10px;
+        display: none;
+    }.add-product-form-9{
+        margin-left:10px;
+        display: none;
+    }.add-product-form-10{
+        margin-left:10px;
+        display: none;
+    }
+    .products-table td{
+    text-align: center;
+    border:1px solid white;
+    height:40px;
+}
+    .products-table{
+        border:1px solid white;
+        border-collapse: collapse;
+        width:700px;
+        margin:10px;
+    }
+    .announcement-table th{
+        border:1px solid white;
+        height:30px;
+        background-color: rgb(165, 161, 161);   
+    }
+    .products-table th{
+        border:1px solid white;
+        height:30px;
+        background-color: rgb(165, 161, 161);   
+    }
+    .tabbed-content{
+        border:1px solid white;
+        height:290px;
+        width:560px;
+        overflow-y: scroll;
+    }
+    .tabbedul ul{
+        list-style: none;
+        background-color: black;
+    }
+    .tabbedul ul li a{
+        text-decoration: none;
+    }
+    .tabbedul ul li{
+        display:inline-flex;
         padding-top:10px;
+        padding-left:15px;
+        padding-right:15px;
+        padding-bottom: 10px;
+    }
+    .products-div{
+        border:1px solid black;
+        margin-left:205px;
+        margin-top:-425px;
+        height:420px;
+        width:560px;
+        background-color: rgb(13, 13, 88);
+        border-radius: 10px;
+    }
+    .announce-btn{
+        margin-left:80px;
+        width:80px;
+        margin-top:10px;
+        height:30px;
+        background-color:black;
+        border:1px solid black;
+        border-radius:5px;
+        font-size: 18px;
+    }
+    .announce-input{
+        background-color: transparent;
+        width:220px;
+        height:40px;
+        border:1px solid white;
+        border-radius:5px;
+    }
+    .announce-input::placeholder{
+        color:white;
+        text-align: center;
+    }
+    .announcement-form-outside-div{
+        margin:10px;
+        margin-left: 80px;
+        display:none;
+    }
+    .add-announce-btn{
+        width:100px;
+        margin:10px;
+        height:30px;
+        background-color:black;
+        border:1px solid black;
+        border-radius:5px;
+        font-size: 18px;
+    }
+    .add-announce-btn:hover{
+        background-color: rgb(165, 161, 161);
+        cursor:pointer;
+    }
+    .announcement-table td{
+        text-align: center;
+        border:1px solid white;
+        height:40px;
+    }
+    .announcement-table th{
+        border:1px solid white;
+        height:30px;
+        background-color: rgb(165, 161, 161);   
+    }
+    .announcement-table{
+        border:1px solid white;
+        border-collapse: collapse;
+        width:450px;
+    }
+   
+    .auth-links a:hover{
+        color: red; 
+    }
+    .released-div ul li{
+    padding-bottom: 30px;
+    padding-top:10px;
+    padding-left:5px;
+
+}
+.released-div ul li:hover{
+    background-color: rgb(165, 161, 161);
+    cursor:pointer;
+}
+.released-div ul li a{
+    text-decoration: none;
+}
+    .left-div ul li{
+    padding-bottom: 30px;
+    padding-top:10px;
+    font-size:20px;
+    padding-left:5px;
+    list-style-type: none;
+}
+.left-div ul li:hover{
+    background-color: rgb(165, 161, 161);
+    cursor:pointer;
+}
+.left-div ul li a{
+    text-decoration: none;
+}
+    .left-div{
+        border:1px solid black;
+        width:100px;
+        height:420px;
+        margin-left:660px ;
+        margin-top:-423px;
+        background-color: rgb(73, 69, 69);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius:10px;
+    }
+    .released-div ul li a{
+        text-decoration: none;
+    }
+    .released-div ul li a:hover{
+        color:red;
+    }
+    .released-div{
+        font-size:20px;
+        margin-top:60px;
+        margin-left:5px;
+    }
+    .profile-picture-words{
+       margin-left:-100px;
+       margin-top:-80px;
+   }
+   .profile-picture-words a:hover{
+       color:red;
+   }
+    .profile-desc{
+    width:100px;
+    margin-left: 3px;
+    border-left:1px dotted white;
+}
+    .profile{
+    display: inline-flex;
+}
+.profile-photo img{
+    width:100px;
+    height:100px;
+    margin-left: 5px;
+    border-radius: 20px;
+}
+    .side-div{
+    border:1px solid black;
+    width:200px;
+    height:420px;
+    margin-top:5px;
+    background-color: rgb(73, 69, 69);
+    box-shadow: 0 4px 8px 0px rgba(0,0,0,0.2);
+    transition: 5.6s;
+    border-radius:10px;
+}
+    .forgot-link{
+        margin-top:10px;
+    }
+    .announcements{
+        border:1px solid black;
+        margin-left:205px;
+        margin-top:-423px;
+        height:420px;
+        width:450px;
+        background-color: rgb(13, 13, 88);
+        border-radius: 10px;
+        overflow-y: scroll;
+    }
+    .signup-form-error{
+        font-style: italic;
+        color:red;
+        font-weight: lighter;
+    }
+    .register-btn{
+        width:150px;
+        height:30px;
+        background-color: black;
+        border-radius:20px;
+        color:white;
+        font-size:15px;
+        border:1px solid white;
+        margin-top:5px;
+    }
+    .login-btn{
+    width:150px;
+    height:30px;
+    background-color: black;
+    border-radius:20px;
+    color:white;
+    font-size:15px;
+    border:1px solid white;
+}
+    .auth-input::placeholder{
+        text-align: center;
+        font-weight: lighter;
+        color:white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size:18px;
+    }
+    
+    .auth-input{
+        background-color: transparent;
+        text-align: center;
+        padding:5px;
+        border-radius:20px;
+        margin:10px;
+        border:1px solid white;
+        width:250px;
+        font-size:18px;
+    }
+    .login-header{
+        font-size: 25px;
+    }
+    .login-form-inner-div{
+        border:1px solid white;
+        width:300px;
+        height:300px;
+        padding-top: 70px;
+        border-radius:20px;
+    }
+    .register-form-inner-div{
+    border:1px solid white;
+    width:300px;
+    height:423px;
+    padding-top: 10px;
+    border-radius:20px;
+}
+    .login-form-outside-div{
+        text-align: center;
+        margin-left:200px; 
+    }
+    .register-input::placeholder{
+    text-align: center;
+    font-weight: lighter;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:15px;
+}
+    .register-input{
+        background-color: transparent;
+        text-align: center;
+        border-radius:20px;
+        margin:2px;
+        border:1px solid white;
+        width:250px;
+        font-size:15px;
+        height:25px;
+    }
+    .login-body{
+        width:100%;
+        background-color: rgb(13, 13, 88);
+        height:430px;
     }
     .footer-list-ul ul{
         display: inline-flex;
@@ -757,13 +1275,34 @@ overflow-y: scroll;
     .footer-list-ul ul li{
         margin-top:10px;
         margin-left: 10px;
-        margin-right: 10px;
-        font-size: 15px;
+        margin-right: 50px;
+        font-size: 12px;
         list-style: none;
     }
+    .div ul{
+        display: block;
+        position: absolute;
+    }
+    .div {
+        margin-right: 100px;
+
+    }
+    .footer-header{
+        margin-left:500px;
+        padding-top:10px;
+    }
+    .div ul li{
+        
+        margin-left:-5px;
+    }
+    .footer-header{
+        margin-left:300px;
+        padding-top:10px;
+    }
+    
     .footer{
-        height:300px;
-        margin-top:5px;
+        height:150px;
+        margin-top:10px;
         background-color: rgb(73, 69, 69);
         width:100%;
     }

@@ -120,4 +120,16 @@ class rejectsController extends Controller
         $products->delete($id);
         return redirect()->back()->with('deletereject','You have deleted a Reject from the Database');
     }
+    public function editreject($id){
+        $updaterejects=rejects::find($id);
+        return view('management.editreject',['updaterejects'=>$updaterejects]);
+    }
+    public function updatereject(Request $request){
+        $updatereject = rejects::find($request->id);
+        $updatereject->Reject_Name=$request->rejectquantity;
+        $updatereject->Quantity=$request->rejectname;
+        $updatereject->Approval=$request->rejectapproval;
+        $updatereject->save();
+        return redirect('rejects')->with('updatereject',"You have updated a Rejects's record..");
+    }
 }
