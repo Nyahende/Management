@@ -3,7 +3,7 @@
 
 
 /* FOR DESKTOPS */
-/* 
+ 
 @media only screen and (min-width: 769px) {
 
 *{
@@ -34,7 +34,6 @@
     height:30px;
     width:100px;
     text-align:center;
-
     background-color:black;
     border:1px solid black;
     border-radius:5px;
@@ -724,11 +723,15 @@ overflow-y: scroll;
 .left-div ul li a{
     text-decoration: none;
 }
-} */
+} 
 
 
+  
 
-@media only screen and (min-width: 415px) and (max-width: 768px) {
+/* FOR TABLETS */
+
+
+ @media only screen and (min-width: 415px) and (max-width: 768px) {
     *{
         padding:0px;
         margin:0px;
@@ -993,12 +996,13 @@ overflow-y: scroll;
         width:700px;
         margin:10px;
     }
-    .announcement-table th{
+    
+    .products-table th{
         border:1px solid white;
         height:30px;
         background-color: rgb(165, 161, 161);   
     }
-    .products-table th{
+    .announcement-table th{
         border:1px solid white;
         height:30px;
         background-color: rgb(165, 161, 161);   
@@ -1323,7 +1327,6 @@ overflow-y: scroll;
     .front-btns-div button:hover{
         border:1px solid rgb(73, 69, 69);
         cursor:pointer;
-
     }
     .front-register-text{
         margin-top:10px;
@@ -1366,6 +1369,641 @@ overflow-y: scroll;
     }
     .policy-header-div{
         margin-left:100px;
+    }
+    .logo{
+        height: 60px;
+        width:60px;
+        border:1px solid white;
+        margin-left: 20px;
+        margin-bottom: -50px;
+    }
+    .logo img{
+        height: 60px;
+        width:60px;
+    }
+} 
+
+
+
+
+/*FOR PHONES */
+
+@media only screen and (max-width: 414px) {
+    *{
+        padding:0px;
+        margin:0px;
+        color:white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .logout{
+        margin-left:160px;
+        height:20px;
+        width:60px;
+        text-align:center;
+        background-color:black;
+        border:1px solid black;
+        border-radius:5px;
+        font-size: 15px;
+    }
+    .logout:hover{
+        background-color: rgb(165, 161, 161);
+        cursor:pointer;
+    }
+    .single-text-div{
+        border:1px solid white;
+        width:250px;
+        height:auto;
+        margin-top:10px;
+        margin-left:10px;
+        padding:10px;
+        background-color: black; 
+        word-wrap:break-word;
+        border-radius: 10px;
+    }
+    .forum-display-div{
+        height:400px;
+        width:300px;
+        border:2px solid white;
+        margin:10px;
+        border-radius: 20px;
+        overflow-y: scroll;
+    }
+    .forum-send-btn{
+        width:50px;
+        height:30px;
+        background-color:black;
+        border:1px solid black;
+        border-radius:20px;
+        font-size: 18px;
+    }
+    .forum-send-btn:hover{
+        cursor:pointer;
+        background-color: rgb(165, 161, 161);
+    }
+    .forum-input{
+        width:240px;
+        height:30px;
+        border-radius: 20px;
+        border:1px solid white;
+        background-color: transparent;
+    }
+    .forum-input::placeholder{
+      text-align: center;
+      color:white;
+      font-size:20px;
+      font-weight: lighter;
+      font-style: italic;
+    }
+    .forum-form{
+        margin:10px;
+    }
+    .reporting-title{
+        margin-left:50px;
+        font-size:20px;
+    }
+    .report-input{
+        margin:10px;
+        background-color: transparent;
+        height:30px;
+        width:130px;
+        border-radius:5px;
+        border:1px solid white;
+    }
+    .report-input::placeholder{
+        color:white;
+        text-align: center;
+    }
+    .add-profile-picture-btn:hover{
+        background-color: rgb(73, 69, 69);
+        cursor: pointer;
+    }
+    .add-profile-picture-btn{
+        width:120px;
+        background-color: black;
+        height:30px;
+        margin:10px;
+        border-radius: 10px;
+        border:1px solid black;
+        border-radius:5px;
+        font-size: 15px;
+    }
+    .profile-picture-form{
+        margin-top:10px;
+        margin-left:50px;
+    }
+    .chart-desc-inner{
+        display:inline-flex
+    }
+    
+    .inner-rejects{
+        margin-left:90px;
+    }
+    .signup-form-error{
+        font-style: italic;
+        color:red;
+        font-weight: lighter;
+        margin-left:20px;
+    }
+    #barChartdaily1{
+        margin-top:-20px;
+        height:220px;
+        width:600px;
+        border:1px solid white;
+    }
+    #barChart1{
+        height:220px;
+        width:600px;
+        border:1px solid white;
+        margin-top: 10px;
+    }
+    #barChartdaily2{
+        margin-top:-20px;
+        height:220px;
+        width:600px;
+        border:1px solid white;
+    }
+    #barChart2{
+        height:220px;
+        width:600px;
+        border:1px solid white;
+        margin-top: 10px;
+    }
+    #barChartdaily3{
+        margin-top:-20px;
+        height:220px;
+        width:600px;
+        border:1px solid white;
+    }
+    #barChart3{
+        height:220px;
+        width:600px;
+        border:1px solid white;
+        margin-top: 10px;
+    }
+    #barChartdaily4{
+        margin-top:-20px;
+        height:220px;
+        width:600px;
+        border:1px solid white;
+    }
+    #barChart4{
+        height:220px;
+        width:600px;
+        border:1px solid white;
+        margin-top: 10px;
+    }
+    #barChartdaily5{
+        margin-top:-20px;
+        height:220px;
+        width:600px;
+        border:1px solid white;
+    }
+    #barChart5{
+        height:220px;
+        width:600px;
+        border:1px solid white;
+        margin-top: 10px;
+    }
+    #barChartdaily6{
+        margin-top:-20px;
+        height:220px;
+        width:600px;
+        border:1px solid white;
+    }
+    #barChart6{
+        height:220px;
+        width:600px;
+        border:1px solid white;
+        margin-top: 10px;
+    }
+    #barChartdaily7{
+        margin-top:-20px;
+        height:220px;
+        width:600px;
+        border:1px solid white;
+    }
+    #barChart7{
+        height:220px;
+        width:600px;
+        border:1px solid white;
+        margin-top: 10px;
+    }
+    #barChartdaily8{
+        margin-top:-20px;
+        height:220px;
+        width:600px;
+        border:1px solid white;
+    }
+    #barChart8{
+        height:220px;
+        width:600px;
+        border:1px solid white;
+        margin-top: 10px;
+    }
+    #barChartdaily9{
+        margin-top:-20px;
+        height:220px;
+        width:600px;
+        border:1px solid white;
+    }
+    #barChart9{
+        height:220px;
+        width:600px;
+        border:1px solid white;
+        margin-top: 10px;
+    }
+    #barChartdaily10{
+        margin-top:-20px;
+        height:220px;
+        width:600px;
+        border:1px solid white;
+    }
+    #barChart10{
+        height:220px;
+        width:600px;
+        border:1px solid white;
+        margin-top: 10px;
+    }
+    .daily-chart-div{
+        height:400px;
+        margin-top:10px;
+    }
+    .monthly-chart-div{
+        height:400px;
+        margin-top:140px;
+    }
+    .monthly-chart-record{
+        margin-left:50px;
+    }
+    .profile-desc{
+        margin-left: 10px;
+    }
+    .product-input::placeholder{
+        color:white;
+        text-align: center;
+    }
+    .product-input{
+        background-color: transparent;
+        height:30px;
+        border-radius: 5px;
+        border:1px solid white;
+        margin:5px;
+    }
+    .products-table td{
+        text-align: center;
+        border:1px solid white;
+        height:40px;
+    }
+    .products-table{
+        border:1px solid white;
+        border-collapse: collapse;
+        width:320px;
+        margin:5px;
+    }
+    
+    .products-table th{
+        border:1px solid white;
+        height:30px;
+        background-color: rgb(165, 161, 161);   
+    }
+    .tabbed-content{
+        border:1px solid white;
+        height:320px;
+        width:320px;
+        overflow-y: scroll;
+    }
+    .product-header{
+        margin-left:100px;
+        padding:10px;
+    }
+    .add-product-form{
+        margin-left:10px;
+        display: none;
+    }
+    .add-product-form-2{
+        margin-left:10px;
+        display: none;
+    }
+    .add-product-form-3{
+        margin-left:10px;
+        display: none;
+    }.add-product-form-4{
+        margin-left:10px;
+        display: none;
+    }.add-product-form-5{
+        margin-left:10px;
+        display: none;
+    }.add-product-form-6{
+        margin-left:10px;
+        display: none;
+    }.add-product-form-7{
+        margin-left:10px;
+        display: none;
+    }.add-product-form-8{
+        margin-left:10px;
+        display: none;
+    }.add-product-form-9{
+        margin-left:10px;
+        display: none;
+    }.add-product-form-10{
+        margin-left:10px;
+        display: none;
+    }
+    .tabbedul ul{
+        list-style: none;
+        background-color: black;
+    }
+    .tabbedul ul li a{
+        text-decoration: none;
+    }
+    .tabbedul ul li{
+        display:inline-flex;
+        padding-top:px;
+        padding-left:5px;
+        padding-right:5px;
+        padding-bottom: 5px;
+    }
+    .tabbedul ul li:hover{
+        background-color: rgb(165, 161, 161);   
+    }
+    .announce-input{
+        background-color: transparent;
+        width:320px;
+        height:40px;
+        border:1px solid white;
+        border-radius:5px;
+        margin-left:5px;
+    }
+    .announce-input::placeholder{
+        color:white;
+        text-align: center;
+    }
+    .left-div-hr{
+        display: none;
+    }
+    .announcement-table td{
+        text-align: center;
+        border:1px solid white;
+        height:30px;
+    }
+    .left-div{
+        background-color: rgb(13, 13, 88);
+        padding: 20px;
+        font-size: 22px;
+        width:280px;
+    }
+    .left-div ul li{
+        list-style-type: none;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .left-div ul li:hover{
+        background-color: rgb(165, 161, 161);   
+    }
+    .left-div ul li a{
+        text-decoration: none;
+    }
+    .left-div ul {
+        display: inline-flex;
+    }
+    .announcement-table th{
+        border:1px solid white;
+        height:20px;
+        background-color: rgb(165, 161, 161);   
+    }
+    .announcement-table{
+        border:1px solid white;
+        border-collapse: collapse;
+        width:320px;
+        height:400px;
+    }
+    .released-div ul li a{
+        text-decoration: none;
+    }
+    .released-div ul li a:hover{
+        color:red;
+    }
+    
+    .released-div{
+        font-size:20px;
+        margin-top:5px;
+        margin-left:5px;
+    }
+    .profile{
+        display: inline-flex;
+    }
+    .profile-photo img{
+        width:150px;
+        height:150px;
+        margin-left: 5px;
+        border-radius: 50%;
+    }
+    .announcements{
+        width:320px;
+        height:400px;
+        background-color: rgb(13, 13, 88);
+        overflow-y: scroll;
+    }
+    .products-div{
+        height:420px;
+        width:320px;
+        background-color: rgb(13, 13, 88);
+    }
+    .announcement-form-outside-div{
+        display:none;
+    }
+    .side-div{
+        width:320px;
+        height:260px;
+        margin-top:5px;
+        background-color: rgb(73, 69, 69);
+        box-shadow: 0 4px 8px 0px rgba(0,0,0,0.2);
+        transition: 5.6s;
+    }
+    .register-input::placeholder{
+        text-align: center;
+        font-weight: lighter;
+        color:white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size:12px;
+    }
+    .register-input{
+        background-color: transparent;
+        text-align: center;
+        border-radius:20px;
+        margin:2px;
+        border:1px solid white;
+        width:180px;
+        font-size:12px;
+        height:22px;
+        margin-left:40px;
+    }
+    .register-form-inner-div{
+        border:1px solid white;
+        width:280px;
+        height:400px;
+        padding-top: 10px;
+        border-radius:20px;
+        margin-left:20px;
+    }
+    .auth-links{
+        margin-top:10px;
+        margin-left: 80px;
+    }
+    .auth-links a:hover{
+        color: red; 
+    }
+    .login-btn{
+        width:80px;
+        height:30px;
+        background-color: black;
+        border-radius:10px;
+        color:white;
+        font-size:15px;
+        border:1px solid white;
+        margin-left:100px;
+    }
+    .announce-btn{
+        width:80px;
+        height:30px;
+        background-color: black;
+        border-radius:5px;
+        color:white;
+        font-size:15px;
+        border:1px solid white;
+        margin-left:5px;
+    }
+    .add-announce-btn{
+        width:80px;
+        height:30px;
+        background-color: black;
+        border-radius:5px;
+        color:white;
+        font-size:15px;
+        border:1px solid white;
+        margin-left:5px;
+    }
+    .dont-have-link{
+        margin-left: -20px;
+    }
+    .register-btn{
+        width:80px;
+        margin-top:10px;
+        height:25px;
+        background-color: black;
+        border-radius:10px;
+        color:white;
+        font-size:12px;
+        border:1px solid white;
+        margin-left:100px;
+    }
+    .auth-input::placeholder{
+        text-align: center;
+        font-weight: lighter;
+        color:white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size:18px;
+    }
+    
+    .auth-input{
+        background-color: transparent;
+        text-align: center;
+        padding:5px;
+        border-radius:20px;
+        margin:10px;
+        border:1px solid white;
+        width:250px;
+        font-size:18px;
+    }
+    .login-header{
+        font-size: 20px;
+        margin-left:70px;
+    }
+    .login-form-inner-div{
+        border:1px solid white;
+        width:280px;
+        height:300px;
+        padding-top: 20px;
+        border-radius:20px;
+        border:1px solid white;
+        margin-left: 25px;
+    }
+    .footer-header{
+        font-size: 15px;
+        margin-left:80px;
+    }
+    .footer-list-ul{
+        font-size: 12px;
+    }
+    .footer{
+        height:313px;
+        background-color:rgb(73, 69, 69);
+        width:100%;
+    }
+    .div{
+        margin:10px;
+    }
+    .front-btns-div{
+        margin-left:60px;
+        display: inline-flex;
+    }
+    .front-btns-div button{
+        width:60px;
+        background-color: black;
+        height:25px;
+        margin:10px;
+        border-radius: 10px;
+        border:1px solid black;
+        border-radius:5px;
+    }
+    .front-btns-div button:hover{
+        border:1px solid rgb(73, 69, 69);
+        cursor:pointer;
+    }
+    .front-register-text{
+        margin-top:10px;
+        margin-left:40px;
+    }
+    .front-welcome-words{
+        margin:10px;
+        width:300px;
+        margin-right: 10px;
+        height:100px;
+        font-size: 17px;
+    }
+    .front-slide-div{
+        border:1px solid white;
+        width:300px;
+        height:200px;
+        margin-left:5px;
+    }
+    .front-slide-div img{
+        width:300px;
+        height:200px;
+    }
+    .front-page-body{
+        width:100%;
+        background-color: rgb(13, 13, 88);
+        height:400px;
+    }
+    .login-body{
+        width:100%;
+        background-color: rgb(13, 13, 88);
+        height:400px;
+    }
+    .header{
+        width:100%;
+        background-color:rgb(73, 69, 69);
+        height:100px;
+    }
+    .header-words{
+        margin-left:90px;
+        padding-top:10px;
+        font-size:15px;
+        margin-top:-50px;
+    }
+    .policy-header-div{
+        margin-left:50px;
     }
     .logo{
         height: 60px;

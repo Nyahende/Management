@@ -22,6 +22,8 @@
 @include('management.sidediv')
 
 <div class="announcements">
+<button class="add-announce-btn" ><a href="{{route('index')}}"> Home</a></button>
+
     <span class="reporting-title">Forum</span><br>
     <div class="forum-form">
         <form id="forum-form-id">

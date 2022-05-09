@@ -19,6 +19,8 @@
 @include('management.sidediv')
 
 <div class="announcements">
+<button class="add-announce-btn" ><a href="{{route('index')}}"> Home</a></button>
+
     <span class="reporting-title">
         Reporting
     </span><br>

@@ -18,4 +18,21 @@ class announcementsController extends Controller
         $query=$announce->save();
         return redirect()->back();
     }
+    public function deleteannounce($id){
+        $announce=announcemnts::find($id);
+        $announce->delete($id);
+        return redirect()->back();
+    }
+
+    public function editannounce($id){
+        $announce=announcemnts::find($id);
+        return view('management.editannounce',['announce'=>$announce]);
+    }
+
+    public function updateannounce(Request $request){
+        $updateannounce = announcemnts::find($request->id);
+        $updateannounce->Announcement=$request->editannounce;
+        $updateannounce->save();
+        return redirect('index');
+    }
 }

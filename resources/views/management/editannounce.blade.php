@@ -20,34 +20,18 @@
 
 <div class="announcements">
     <div class="announce-outside-table">
-        <button class="add-announce-btn" id="add-announce-btn">Announce</button>
-        <div class="announcement-form-outside-div">
-            <form action="{{route('addannounce')}}" method="post">
+        <div class="edit-announcement-form-outside-div">
+            <form action="{{route('updateannounce')}}" method="post">
                 @csrf
                 <div class="announcement-form-inside-div">
-                    <input type="text" placeholder="Type the announcement" class="announce-input" name="announce">
+
+                    <input type="hidden" name="id" value="{{$announce['id']}}">
+                    <input type="text" placeholder="Type the announcement" class="announce-input" name="editannounce" value="{{$announce['Announcement']}}">
                     <button type="submit" class="announce-btn" id="announce-btn-upload">Upload</button>
                 </div>
             </form>
         </div>
-        <table class="announcement-table">
-            <tr>
-                <th>Date</th>
-                <th>Announced By</th>
-                <th>Announcement</th>
-                <th>Edit</th>
-                <th>Delete</th>
-            </tr>
-            @foreach($announce as $item)
-            <tr>
-                <td>{{$item->updated_at}}</td>
-                <td>{{$item->Announcer}}</td>
-                <td>{{$item->Announcement}}</td>
-                <td><a href="{{'editannounce/'.$item->id}}"> Edit </a></td>
-                <td><a href="{{'deleteannounce/'.$item->id}}">Delete</a></td>
-            </tr>     
-            @endforeach      
-        </table>
+        
     </div>
 </div>
 

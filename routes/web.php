@@ -58,10 +58,13 @@ Route::post('addrej9',[rejectsController::class,'addrej9'])->name('addrej9');
 Route::post('addrej10',[rejectsController::class,'addrej10'])->name('addrej10');
 
 Route::get('deleteproduct/{id}',[productsController::class,'deleteproduct']);
+Route::get('deleteannounce/{id}',[announcementsController::class,'deleteannounce']);
 Route::get('deletereject/{id}',[rejectsController::class,'deletereject']);
 
+Route::get('editannounce/{id}',[announcementsController::class,'editannounce']);
 Route::get('editproduct/{id}',[productsController::class,'editproduct']);
 Route::get('editreject/{id}',[rejectsController::class,'editreject']);
+Route::post('updateannounce',[announcementsController::class,'updateannounce'])->name('updateannounce');
 Route::post('updateproduct',[productsController::class,'updateproduct'])->name('updateproduct');
 Route::post('updatereject',[rejectsController::class,'updatereject'])->name('updatereject');
 

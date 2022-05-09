@@ -62,18 +62,21 @@
                        <canvas id="barChartdaily1" ></canvas>
                        <div class="daily-chart-desc">
                          <div class="chart-desc-inner">
+                             <div class="inner-products">
                               <span>Product 01</span>
                             <div class="min" >Min:{{number_format($dailypromin1)}}</div>
                             <div class="min">Max:{{number_format($dailypromaximum1)}}</div>
                             <div class="min" >Avg:{{round($dailyproavg1,2)}}</div>
                             <div class="min">Total:{{number_format($dailyprototal1)}}</div>
-
+                            </div>
+                            <div class="inner-rejects">
                             <span>Rejects 01</span>
 
                             <div class="min" >Min:{{$dailyminrej1}}</div>
                             <div class="min">Max:{{number_format($dailymaxrej1)}}</div>
                             <div class="min" >Avg:{{round($dailyavgrej1,2)}}</div>
                             <div class="min">Total:{{number_format($dailytotalrej1)}}</div>
+                            </div>
                          </div>
                        </div>
 
@@ -94,18 +97,21 @@
                        <canvas id="barChart1" ></canvas>
                        <div class="chart-desc">
                          <div class="chart-desc-inner">
+                         <div class="inner-products">
                               <span>Product 01</span>
                             <div class="min" >Min:{{number_format($min1)}}</div>
                             <div class="min">Max:{{number_format($maximum1)}}</div>
                             <div class="min" >Avg:{{round($avgpro1,2)}}</div>
                             <div class="min">Total:{{number_format($tatalProductRec1)}}</div>
-
+                            </div>
+                            <div class="inner-rejects">
                             <span>Rejects 01</span>
 
                             <div class="min" >Min:{{$minrej1}}</div>
                             <div class="min">Max:{{number_format($maximumrej1)}}</div>
                             <div class="min" >Avg:{{round($avgrej1,2)}}</div>
                             <div class="min">Total:{{number_format($tatalRejectRec1)}}</div>
+                            </div>
                          </div>
                        </div>
                        <!-- PRODUCT ONE DAILY -->
@@ -308,18 +314,22 @@
                     <canvas id="barChartdaily2" ></canvas>
                     <div class="daily-chart-desc">
                     <div class="chart-desc-inner">
+                    <div class="inner-products">
                           <span>Product 02</span>
                         <div class="min" >Min:{{number_format($dailypromin2)}}</div>
                         <div class="min">Max:{{number_format($dailypromaximum2)}}</div>
                         <div class="min" >Avg:{{round($dailyproavg2,2)}}</div>
                         <div class="min">Total:{{number_format($dailyprototal2)}}</div>
+                        </div>
 
+                        <div class="inner-rejects">
                         <span>Rejects 02</span>
 
                         <div class="min" >Min:{{$dailyminrej2}}</div>
                         <div class="min">Max:{{number_format($dailymaxrej2)}}</div>
                         <div class="min" >Avg:{{round($dailyavgrej2,2)}}</div>
                         <div class="min">Total:{{number_format($dailytotalrej2)}}</div>
+                        </div>
                     </div>
                     </div>
 
@@ -337,11 +347,15 @@
                        <canvas id="barChart2" ></canvas>
                        <div class="chart-desc">
                          <div class="chart-desc-inner">
+                         <div class="inner-products">
                               <span>Product 02</span>
                             <div class="min" >Min:{{number_format($min2)}}</div>
                             <div class="min">Max:{{number_format($maximum2)}}</div>
                             <div class="min" >Avg:{{round($avgpro2,2)}}</div>
                             <div class="min">Total:{{number_format($tatalProductRec2)}}</div>
+                          </div>
+
+                          <div class="inner-rejects">
 
                             <span>Rejects 02</span>
 
@@ -349,6 +363,7 @@
                             <div class="min">Max:{{number_format($maximumrej2)}}</div>
                             <div class="min" >Avg:{{round($avgrej2,2)}}</div>
                             <div class="min">Total:{{number_format($tatalRejectRec2)}}</div>
+                          </div>
                          </div>
 
                 </div>
@@ -553,18 +568,25 @@
                       <canvas id="barChartdaily3" ></canvas>
                       <div class="daily-chart-desc">
                       <div class="chart-desc-inner">
+
+                     
+                         <div class="inner-products">
+
                             <span>Product 03</span>
                           <div class="min" >Min:{{number_format($dailypromaximum3)}}</div>
                           <div class="min">Max:{{number_format($dailypromin3)}}</div>
                           <div class="min" >Avg:{{round($dailyproavg3,2)}}</div>
                           <div class="min">Total:{{number_format($dailyprototal3)}}</div>
-
+                        </div>
+                          
+                        <div class="inner-rejects">
                           <span>Rejects 03</span>
 
                           <div class="min" >Min:{{$dailyminrej3}}</div>
                           <div class="min">Max:{{number_format($dailymaxrej3)}}</div>
                           <div class="min" >Avg:{{round($dailyavgrej3,2)}}</div>
                           <div class="min">Total:{{number_format($dailytotalrej3)}}</div>
+                        </div>
                       </div>
                       </div>
 
@@ -582,18 +604,26 @@
                        <canvas id="barChart3" ></canvas>
                        <div class="chart-desc">
                          <div class="chart-desc-inner">
+
+                         <div class="inner-products">
+
                               <span>Product 03</span>
                             <div class="min" >Min:{{number_format($min3)}}</div>
                             <div class="min">Max:{{number_format($maximum3)}}</div>
                             <div class="min" >Avg:{{round($avgpro3,2)}}</div>
                             <div class="min">Total:{{number_format($tatalProductRec3)}}</div>
 
-                            <span>Rejects 03</span>
+                          </div>
 
+                          <div class="inner-rejects">
+
+                            <span>Rejects 03</span>
                             <div class="min" >Min:{{$minrej3}}</div>
                             <div class="min">Max:{{number_format($maximumrej3)}}</div>
                             <div class="min" >Avg:{{round($avgrej3,2)}}</div>
                             <div class="min">Total:{{number_format($tatalRejectRec3)}}</div>
+
+                          </div>
                          </div>
 
             
@@ -798,11 +828,19 @@
                       <canvas id="barChartdaily4" ></canvas>
                       <div class="daily-chart-desc">
                       <div class="chart-desc-inner">
+
+                        <div class="inner-products">
+
                             <span>Product 04</span>
                           <div class="min" >Min:{{number_format($dailypromin4)}}</div>
                           <div class="min">Max:{{number_format($dailypromaximum4)}}</div>
                           <div class="min" >Avg:{{round($dailyproavg4,2)}}</div>
                           <div class="min">Total:{{number_format($dailyprototal4)}}</div>
+                      
+                        </div>
+
+
+                        <div class="inner-rejects">
 
                           <span>Rejects 04</span>
 
@@ -810,6 +848,8 @@
                           <div class="min">Max:{{number_format($dailymaxrej4)}}</div>
                           <div class="min" >Avg:{{round($dailyavgrej4,2)}}</div>
                           <div class="min">Total:{{number_format($dailytotalrej4)}}</div>
+
+                        </div>
                       </div>
                       </div>
 
@@ -827,11 +867,18 @@
                        <canvas id="barChart4" ></canvas>
                        <div class="chart-desc">
                          <div class="chart-desc-inner">
+
+                         <div class="inner-products">
+
                               <span>Product 04</span>
                             <div class="min" >Min:{{number_format($min4)}}</div>
                             <div class="min">Max:{{number_format($maximum4)}}</div>
                             <div class="min" >Avg:{{round($avgpro4,2)}}</div>
                             <div class="min">Total:{{number_format($tatalProductRec4)}}</div>
+
+                          </div>
+
+                          <div class="inner-rejects">
 
                             <span>Rejects 04</span>
 
@@ -839,6 +886,8 @@
                             <div class="min">Max:{{number_format($maximumrej4)}}</div>
                             <div class="min" >Avg:{{round($avgrej4,2)}}</div>
                             <div class="min">Total:{{number_format($tatalRejectRec4)}}</div>
+
+                          </div>
                          </div>
 
                            
@@ -1042,11 +1091,18 @@
                     <canvas id="barChartdaily5" ></canvas>
                     <div class="daily-chart-desc">
                     <div class="chart-desc-inner">
+
+                    <div class="inner-products">
+
                           <span>Product 05</span>
                         <div class="min" >Min:{{number_format($dailypromin5)}}</div>
                         <div class="min">Max:{{number_format($dailypromaximum5)}}</div>
                         <div class="min" >Avg:{{round($dailyproavg5,2)}}</div>
                         <div class="min">Total:{{number_format($dailyprototal5)}}</div>
+
+                    </div>
+
+                    <div class="inner-rejects">
 
                         <span>Rejects 05</span>
 
@@ -1054,6 +1110,8 @@
                         <div class="min">Max:{{number_format($dailymaxrej5)}}</div>
                         <div class="min" >Avg:{{round($dailyavgrej5,2)}}</div>
                         <div class="min">Total:{{number_format($dailytotalrej5)}}</div>
+
+                     </div>
                     </div>
                     </div>
 
@@ -1071,18 +1129,26 @@
                        <canvas id="barChart5" ></canvas>
                        <div class="chart-desc">
                          <div class="chart-desc-inner">
+
+                        <div class="inner-products">
+
                               <span>Product 05</span>
                             <div class="min" >Min:{{number_format($min5)}}</div>
                             <div class="min">Max:{{number_format($maximum5)}}</div>
                             <div class="min" >Avg:{{round($avgpro5,2)}}</div>
                             <div class="min">Total:{{number_format($tatalProductRec5)}}</div>
+                          
+                        </div>
 
+                        <div class="inner-rejects">
                             <span>Rejects 05</span>
 
                             <div class="min" >Min:{{$minrej5}}</div>
                             <div class="min">Max:{{number_format($maximumrej5)}}</div>
                             <div class="min" >Avg:{{round($avgrej5,2)}}</div>
                             <div class="min">Total:{{number_format($tatalRejectRec5)}}</div>
+
+                        </div>
                          </div>                
                        </div>
              <!-- PRODUCT FIVE DAILY -->
@@ -1284,18 +1350,25 @@
                     <canvas id="barChartdaily6" ></canvas>
                     <div class="daily-chart-desc">
                     <div class="chart-desc-inner">
+
+                    <div class="inner-products">
+
                           <span>Product 06</span>
                         <div class="min" >Min:{{number_format($dailypromin6)}}</div>
                         <div class="min">Max:{{number_format($dailypromaximum6)}}</div>
                         <div class="min" >Avg:{{round($dailyproavg6,2)}}</div>
                         <div class="min">Total:{{number_format($dailyprototal6)}}</div>
 
+                    </div>
+
+                    <div class="inner-rejects">
                         <span>Rejects 06</span>
 
                         <div class="min" >Min:{{$dailyminrej6}}</div>
                         <div class="min">Max:{{number_format($dailymaxrej6)}}</div>
                         <div class="min" >Avg:{{round($dailyavgrej6,2)}}</div>
                         <div class="min">Total:{{number_format($dailytotalrej6)}}</div>
+                    </div>
                     </div>
                     </div>
 
@@ -1313,11 +1386,18 @@
                        <canvas id="barChart6" ></canvas>
                        <div class="chart-desc">
                          <div class="chart-desc-inner">
+
+                         <div class="inner-products">
+
                               <span>Product 06</span>
                             <div class="min" >Min:{{number_format($min6)}}</div>
                             <div class="min">Max:{{number_format($maximum6)}}</div>
                             <div class="min" >Avg:{{round($avgpro6,2)}}</div>
                             <div class="min">Total:{{number_format($tatalProductRec6)}}</div>
+
+                          </div>
+
+                          <div class="inner-rejects">
 
                             <span>Rejects 06</span>
 
@@ -1325,6 +1405,8 @@
                             <div class="min">Max:{{number_format($maximumrej6)}}</div>
                             <div class="min" >Avg:{{round($avgrej6,2)}}</div>
                             <div class="min">Total:{{number_format($tatalRejectRec6)}}</div>
+
+                          </div>
                          </div>               
                        </div>
              <!-- PRODUCT SIX DAILY -->
@@ -1528,18 +1610,26 @@
                     <canvas id="barChartdaily7"></canvas>
                     <div class="daily-chart-desc">
                       <div class="chart-desc-inner">
+
+                      <div class="inner-products">
+
                             <span>Product 07</span>
                           <div class="min" >Min:{{number_format($dailypromin7)}}</div>
                           <div class="min">Max:{{number_format($dailypromaximum7)}}</div>
                           <div class="min" >Avg:{{round($dailyproavg7,2)}}</div>
                           <div class="min">Total:{{number_format($dailyprototal7)}}</div>
 
+                      </div>
+
+                      <div class="inner-rejects">
                           <span>Rejects 07</span>
 
                           <div class="min" >Min:{{$dailyminrej7}}</div>
                           <div class="min">Max:{{number_format($dailymaxrej7)}}</div>
                           <div class="min" >Avg:{{round($dailyavgrej7,2)}}</div>
                           <div class="min">Total:{{number_format($dailytotalrej7)}}</div>
+
+                      </div>
                       </div>
                     </div>            
                 </div>
@@ -1555,11 +1645,18 @@
                           <canvas id="barChart7" ></canvas>
                           <div class="chart-desc">
                             <div class="chart-desc-inner">
+
+                            <div class="inner-products">
+
                                   <span>Product 07</span>
                                 <div class="min" >Min:{{number_format($min7)}}</div>
                                 <div class="min">Max:{{number_format($maximum7)}}</div>
                                 <div class="min" >Avg:{{round($avgpro7,2)}}</div>
                                 <div class="min">Total:{{number_format($tatalProductRec7)}}</div>
+
+                            </div>
+
+                            <div class="inner-rejects">
 
                                 <span>Rejects 07</span>
 
@@ -1567,6 +1664,8 @@
                                 <div class="min">Max:{{number_format($maximumrej7)}}</div>
                                 <div class="min" >Avg:{{round($avgrej7,2)}}</div>
                                 <div class="min">Total:{{number_format($tatalRejectRec7)}}</div>
+                              
+                            </div>
                             </div>                
                           </div>
                       <!-- PRODUCT SEVEN DAILY -->
@@ -1767,11 +1866,18 @@
                     <canvas id="barChartdaily8" ></canvas>
                   <div class="daily-chart-desc">
                     <div class="chart-desc-inner">
+
+                    <div class="inner-products">
+
                           <span>Product 08</span>
                         <div class="min" >Min:{{number_format($dailypromin8)}}</div>
                         <div class="min">Max:{{number_format($dailypromaximum8)}}</div>
                         <div class="min" >Avg:{{round($dailyproavg8,2)}}</div>
                         <div class="min">Total:{{number_format($dailyprototal8)}}</div>
+
+                    </div>
+
+                    <div class="inner-rejects">
 
                         <span>Rejects 08</span>
 
@@ -1779,6 +1885,8 @@
                         <div class="min">Max:{{number_format($dailymaxrej8)}}</div>
                         <div class="min" >Avg:{{round($dailyavgrej8,2)}}</div>
                         <div class="min">Total:{{number_format($dailytotalrej8)}}</div>
+
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -1795,18 +1903,25 @@
                        <canvas id="barChart8" ></canvas>
                        <div class="chart-desc">
                          <div class="chart-desc-inner">
+
+                          <div class="inner-products">
+
                               <span>Product 08</span>
                             <div class="min" >Min:{{number_format($min8)}}</div>
                             <div class="min">Max:{{number_format($maximum8)}}</div>
                             <div class="min" >Avg:{{round($avgpro8,2)}}</div>
                             <div class="min">Total:{{number_format($tatalProductRec8)}}</div>
 
+                          </div>
+
+                          <div class="inner-rejects">
                             <span>Rejects 08</span>
 
                             <div class="min" >Min:{{$minrej8}}</div>
                             <div class="min">Max:{{number_format($maximumrej8)}}</div>
                             <div class="min" >Avg:{{round($avgrej8,2)}}</div>
                             <div class="min">Total:{{number_format($tatalRejectRec8)}}</div>
+                          </div>
                          </div>                
                        </div>
                   <!-- PRODUCT EIGHT DAILY -->
@@ -2009,11 +2124,19 @@
                     <canvas id="barChartdaily9" ></canvas>
                     <div class="daily-chart-desc">
                     <div class="chart-desc-inner">
+
+                    <div class="inner-products">
+
                           <span>Product 09</span>
                         <div class="min" >Min:{{number_format($dailypromin9)}}</div>
                         <div class="min">Max:{{number_format($dailypromaximum9)}}</div>
                         <div class="min" >Avg:{{round($dailyproavg9,2)}}</div>
                         <div class="min">Total:{{number_format($dailyprototal9)}}</div>
+
+                    </div>
+
+
+                    <div class="inner-rejects">
 
                         <span>Rejects 09</span>
 
@@ -2021,6 +2144,8 @@
                         <div class="min">Max:{{number_format($dailymaxrej9)}}</div>
                         <div class="min" >Avg:{{round($dailyavgrej9,2)}}</div>
                         <div class="min">Total:{{number_format($dailytotalrej9)}}</div>
+
+                    </div>
                     </div>
                     </div>
 
@@ -2038,11 +2163,18 @@
                        <canvas id="barChart9" ></canvas>
                        <div class="chart-desc">
                          <div class="chart-desc-inner">
+
+                        <div class="inner-products">
+
                               <span>Product 09</span>
                             <div class="min" >Min:{{number_format($min9)}}</div>
                             <div class="min">Max:{{number_format($maximumrej9)}}</div>
                             <div class="min" >Avg:{{round($avgpro9,2)}}</div>
                             <div class="min">Total:{{number_format($tatalProductRec9)}}</div>
+
+                        </div>
+
+                        <div class="inner-rejects">
 
                             <span>Rejects 09</span>
 
@@ -2050,6 +2182,8 @@
                             <div class="min">Max:{{number_format($maximumrej9)}}</div>
                             <div class="min" >Avg:{{round($avgrej9,2)}}</div>
                             <div class="min">Total:{{number_format($tatalRejectRec9)}}</div>
+
+                          </div>
                          </div>
                          </div>
  <!-- PRODUCT NINE DAILY -->
@@ -2253,11 +2387,19 @@
                     <canvas id="barChartdaily10" ></canvas>
                     <div class="daily-chart-desc">
                     <div class="chart-desc-inner">
+
+                    <div class="inner-products">
+
                           <span>Product 10</span>
                         <div class="min" >Min:{{number_format($dailypromin10)}}</div>
                         <div class="min">Max:{{number_format($dailypromaximum10)}}</div>
                         <div class="min" >Avg:{{round($dailyproavg10,2)}}</div>
                         <div class="min">Total:{{number_format($dailyprototal10)}}</div>
+
+                    </div>
+
+
+                    <div class="inner-rejects">
 
                         <span>Rejects 10</span>
 
@@ -2265,6 +2407,8 @@
                         <div class="min">Max:{{number_format($dailymaxrej10)}}</div>
                         <div class="min" >Avg:{{round($dailyavgrej10,2)}}</div>
                         <div class="min">Total:{{number_format($dailytotalrej10)}}</div>
+
+                    </div>
                     </div>
                     </div>
 
@@ -2283,11 +2427,19 @@
                        <canvas id="barChart10" ></canvas>
                        <div class="chart-desc">
                          <div class="chart-desc-inner">
+
+                        <div class="inner-products">
+
                               <span>Product 10</span>
                             <div class="min" >Min:{{number_format($min10)}}</div>
                             <div class="min">Max:{{number_format($maximum10)}}</div>
                             <div class="min" >Avg:{{round($avgpro10,2)}}</div>
                             <div class="min">Total:{{number_format($tatalProductRec10)}}</div>
+
+                        </div>
+
+
+                        <div class="inner-rejects">
 
                             <span>Rejects 10</span>
 
@@ -2296,6 +2448,7 @@
                             <div class="min" >Avg:{{round($avgrej10,2)}}</div>
                             <div class="min">Total:{{number_format($tatalRejectRec10)}}</div>
                          </div>
+                        </div>
                        </div>
                           <!-- PRODUCT TEN DAILY -->
                       

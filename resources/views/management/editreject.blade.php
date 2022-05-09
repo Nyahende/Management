@@ -21,23 +21,10 @@
 
 <div class="products-div">
     <button class="add-announce-btn" ><a href="{{route('index')}}"> Home</a></button>
-    <span class="released-products-header">RELEASED PRODUCTS</span>
+    <span class="released-products-header">REJECTS</span>
 
 <div class="tabbed-panel">
-        <div class="tabbedul">
-            <ul>
-            <li><a href="#product1" >Product 1</a></li> 
-            <li ><a href="#product2">Product 2</a></li>  
-            <li ><a href="#product3">Product 3</a></li> 
-            <li ><a href="#product4">Product 4</a></li> 
-            <li ><a href="#product5">Product 5</a></li> 
-            <li ><a href="#product6">Product 6</a></li>
-            <li ><a href="#product7">Product 7</a></li>
-            <li ><a href="#product8">Product 8</a></li>
-            <li ><a href="#product9">Product 9</a></li>
-            <li ><a href="#product10">Product 10</a></li>
-            </ul>
-        </div>
+        
         <div class="tabbed-content">
             <div id="product1">
                 <span class="product-header"></span><br>
