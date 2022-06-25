@@ -19,7 +19,7 @@
 @include('management.header')
 @include('management.sidediv')
 
-<div class="Rejects-div">
+<div class="products-div">
     <button class="add-announce-btn" ><a href="{{route('index')}}"> Home</a></button>
     <span class="released-Rejects-header">REJECTS</span>
 
@@ -56,7 +56,7 @@
                     {{Session::get('updatereject')}}
                   </div>
                 @endif
-                <div class="add-Reject-form">
+                <div class="add-product-form">
                     <form action="{{route('addrej1')}}" method="post">
                        @csrf
                         <div class="inside-Reject-form">
@@ -69,7 +69,7 @@
                 </div>
 
             <button class="add-announce-btn" id="add-Reject-btn">Add Reject</button>
-            <table class="Rejects-table">
+            <table class="products-table">
             <tr>
                 <th>SN</th>
                 <th>Date</th>
@@ -95,7 +95,7 @@
             <div id="Reject2">
 
             <span class="Reject-header">Reject two</span> <br>
-            <div class="add-Reject-form-2">
+            <div class="add-product-form-2">
                     <form action="{{route('addrej2')}}" method="post">
                         @csrf
                         <div class="inside-Reject-form">
@@ -108,7 +108,7 @@
                 </div>
 
             <button class="add-announce-btn" id="add-Reject-btn-2">Add Reject</button>
-            <table class="Rejects-table">
+            <table class="products-table">
             <tr>
                 <th>SN</th>
                 <th>Date</th>
@@ -134,7 +134,7 @@
             <div id="Reject3">
 
             <span class="Reject-header">Reject three</span> <br>
-            <div class="add-Reject-form-3">
+            <div class="add-product-form-3">
                     <form action="{{route('addrej3')}}" method="post">
                         @csrf
                         <div class="inside-Reject-form">
@@ -147,7 +147,7 @@
                 </div>
 
             <button class="add-announce-btn" id="add-Reject-btn-3">Add Reject</button>
-            <table class="Rejects-table">
+            <table class="products-table">
             <tr>
                 <th>SN</th>
                 <th>Date</th>
@@ -173,7 +173,7 @@
             <div id="Reject4">
 
             <span class="Reject-header">Reject Four</span> <br>
-            <div class="add-Reject-form-4">
+            <div class="add-product-form-4">
                     <form action="{{route('addrej4')}}" method="post">
                         @csrf
                         <div class="inside-Reject-form">
@@ -186,7 +186,7 @@
                 </div>
 
             <button class="add-announce-btn" id="add-Reject-btn-4">Add Reject</button>
-            <table class="Rejects-table">
+            <table class="products-table">
             <tr>
                 <th>SN</th>
                 <th>Date</th>
@@ -213,7 +213,7 @@
             <div id="Reject5">
 
             <span class="Reject-header">Reject Five</span> <br>
-            <div class="add-Reject-form-5">
+            <div class="add-product-form-5">
                     <form action="{{route('addrej5')}}" method="post">
                         @csrf
                         <div class="inside-Reject-form">
@@ -226,7 +226,7 @@
                 </div>
 
             <button class="add-announce-btn" id="add-Reject-btn-5">Add Reject</button>
-            <table class="Rejects-table">
+            <table class="products-table">
             <tr>
                 <th>SN</th>
                 <th>Date</th>
@@ -253,7 +253,7 @@
             <div id="Reject6">
 
             <span class="Reject-header">Reject Six</span> <br>
-            <div class="add-Reject-form-6">
+            <div class="add-product-form-6">
                     <form action="{{route('addrej6')}}" method="post">
                         @csrf
                         <div class="inside-Reject-form">
@@ -266,7 +266,7 @@
                 </div>
 
             <button class="add-announce-btn" id="add-Reject-btn-6">Add Reject</button>
-            <table class="Rejects-table">
+            <table class="products-table">
             <tr>
                 <th>SN</th>
                 <th>Date</th>
@@ -293,7 +293,7 @@
             <div id="Reject7">
 
             <span class="Reject-header">Reject Seven</span> <br>
-            <div class="add-Reject-form-7">
+            <div class="add-product-form-7">
                     <form action="{{route('addrej7')}}" method="post">
                         @csrf
                         <div class="inside-Reject-form">
@@ -306,7 +306,7 @@
                 </div>
 
             <button class="add-announce-btn" id="add-Reject-btn-7">Add Reject</button>
-            <table class="Rejects-table">
+            <table class="products-table">
             <tr>
                 <th>SN</th>
                 <th>Date</th>
@@ -333,7 +333,7 @@
             <div id="Reject8">
 
             <span class="Reject-header">Reject Eight</span> <br>
-            <div class="add-Reject-form-8">
+            <div class="add-product-form-8">
                     <form action="{{route('addrej8')}}" method="post">
                         @csrf
                         <div class="inside-Reject-form">
@@ -346,7 +346,7 @@
                 </div>
 
             <button class="add-announce-btn" id="add-Reject-btn-8">Add Reject</button>
-            <table class="Rejects-table">
+            <table class="products-table">
             <tr>
                 <th>SN</th>
                 <th>Date</th>
@@ -373,7 +373,7 @@
             <div id="Reject9">
 
             <span class="Reject-header">Reject Nine</span> <br>
-            <div class="add-Reject-form-9">
+            <div class="add-product-form-9">
                     <form action="{{route('addrej9')}}" method="post">
                         @csrf
                         <div class="inside-Reject-form">
@@ -386,7 +386,7 @@
                 </div>
 
             <button class="add-announce-btn" id="add-Reject-btn-9">Add Reject</button>
-            <table class="Rejects-table">
+            <table class="products-table">
             <tr>
                 <th>SN</th>
                 <th>Date</th>
@@ -413,7 +413,7 @@
             <div id="Reject10">
 
             <span class="Reject-header">Reject Ten</span> <br>
-            <div class="add-Reject-form-10">
+            <div class="add-product-form-10">
                     <form action="{{route('addrej10')}}" method="post">
                         @csrf
                         <div class="inside-Reject-form">
@@ -426,7 +426,7 @@
                 </div>
 
             <button class="add-announce-btn" id="add-Reject-btn-10">Add Reject</button>
-            <table class="Rejects-table">
+            <table class="products-table">
             <tr>
                 <th>SN</th>
                 <th>Date</th>
