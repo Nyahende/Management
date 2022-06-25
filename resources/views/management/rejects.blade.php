@@ -63,12 +63,12 @@
                             <input type="text" name="rejectquantity1" id="" placeholder="Quantity" class="Reject-input">
                             <input type="text" name="rejectname1" id="" placeholder="Reject Name" class="Reject-input">
                             <input type="text" name="rejectapp1" id="" placeholder="Approval" class="Reject-input">
-                            <button type="submit" class="add-announce-btn" id="Reject-upload">Upload</button>
+                            <button type="submit" class="add-announce-btn" id="product-upload">Upload</button>
                         </div>
                     </form>
                 </div>
 
-            <button class="add-announce-btn" id="add-Reject-btn">Add Reject</button>
+            <button class="add-announce-btn" id="add-product-btn">Add Reject</button>
             <table class="products-table">
             <tr>
                 <th>SN</th>
@@ -102,12 +102,12 @@
                             <input type="text" name="rejectquantity2" id="" placeholder="Quantity" class="Reject-input">
                             <input type="text" name="rejectname2" id="" placeholder="Reject Name" class="Reject-input">
                             <input type="text" name="rejectapp2" id="" placeholder="Approval" class="Reject-input">
-                            <button type="submit" class="add-announce-btn" id="Reject-upload-2">Upload</button>
+                            <button type="submit" class="add-announce-btn" id="product-upload-2">Upload</button>
                         </div>
                     </form>
                 </div>
 
-            <button class="add-announce-btn" id="add-Reject-btn-2">Add Reject</button>
+            <button class="add-announce-btn" id="add-product-btn-2">Add Reject</button>
             <table class="products-table">
             <tr>
                 <th>SN</th>
@@ -141,12 +141,12 @@
                             <input type="text" name="rejectquantity3" id="" placeholder="Quantity" class="Reject-input">
                             <input type="text" name="rejectname3" id="" placeholder="Reject Name" class="Reject-input">
                             <input type="text" name="rejectapp3" id="" placeholder="Approval" class="Reject-input">
-                            <button type="submit" class="add-announce-btn" id="Reject-upload-3">Upload</button>
+                            <button type="submit" class="add-announce-btn" id="product-upload-3">Upload</button>
                         </div>
                     </form>
                 </div>
 
-            <button class="add-announce-btn" id="add-Reject-btn-3">Add Reject</button>
+            <button class="add-announce-btn" id="add-product-btn-3">Add Reject</button>
             <table class="products-table">
             <tr>
                 <th>SN</th>
@@ -180,12 +180,12 @@
                             <input type="text" name="rejectquantity4" id="" placeholder="Quantity" class="Reject-input">
                             <input type="text" name="rejectname4" id="" placeholder="Reject Name" class="Reject-input">
                             <input type="text" name="rejectapp4" id="" placeholder="Approval" class="Reject-input">
-                            <button type="submit" class="add-announce-btn" id="Reject-upload-4">Upload</button>
+                            <button type="submit" class="add-announce-btn" id="product-upload-4">Upload</button>
                         </div>
                     </form>
                 </div>
 
-            <button class="add-announce-btn" id="add-Reject-btn-4">Add Reject</button>
+            <button class="add-announce-btn" id="add-product-btn-4">Add Reject</button>
             <table class="products-table">
             <tr>
                 <th>SN</th>
@@ -220,12 +220,12 @@
                             <input type="text" name="rejectquantity5" id="" placeholder="Quantity" class="Reject-input">
                             <input type="text" name="rejectname5" id="" placeholder="Reject Name" class="Reject-input">
                             <input type="text" name="rejectapp5" id="" placeholder="Approval" class="Reject-input">
-                            <button type="submit" class="add-announce-btn" id="Reject-upload-5">Upload</button>
+                            <button type="submit" class="add-announce-btn" id="product-upload-5">Upload</button>
                         </div>
                     </form>
                 </div>
 
-            <button class="add-announce-btn" id="add-Reject-btn-5">Add Reject</button>
+            <button class="add-announce-btn" id="add-product-btn-5">Add Reject</button>
             <table class="products-table">
             <tr>
                 <th>SN</th>
@@ -260,12 +260,12 @@
                             <input type="text" name="rejectquantity6" id="" placeholder="Quantity" class="Reject-input">
                             <input type="text" name="rejectname6" id="" placeholder="Reject Name" class="Reject-input">
                             <input type="text" name="rejectapp6" id="" placeholder="Approval" class="Reject-input">
-                            <button type="submit" class="add-announce-btn" id="Reject-upload-6">Upload</button>
+                            <button type="submit" class="add-announce-btn" id="product-upload-6">Upload</button>
                         </div>
                     </form>
                 </div>
 
-            <button class="add-announce-btn" id="add-Reject-btn-6">Add Reject</button>
+            <button class="add-announce-btn" id="add-product-btn-6">Add Reject</button>
             <table class="products-table">
             <tr>
                 <th>SN</th>
@@ -300,12 +300,12 @@
                             <input type="text" name="rejectquantity7" id="" placeholder="Quantity" class="Reject-input">
                             <input type="text" name="rejectname7" id="" placeholder="Reject Name" class="Reject-input">
                             <input type="text" name="rejectapp7" id="" placeholder="Approval" class="Reject-input">
-                            <button type="submit" class="add-announce-btn" id="Reject-upload-7">Upload</button>
+                            <button type="submit" class="add-announce-btn" id="product-upload-7">Upload</button>
                         </div>
                     </form>
                 </div>
 
-            <button class="add-announce-btn" id="add-Reject-btn-7">Add Reject</button>
+            <button class="add-announce-btn" id="add-product-btn-7">Add Reject</button>
             <table class="products-table">
             <tr>
                 <th>SN</th>
@@ -340,12 +340,12 @@
                             <input type="text" name="rejectquantity8" id="" placeholder="Quantity" class="Reject-input">
                             <input type="text" name="rejectname8" id="" placeholder="Reject Name" class="Reject-input">
                             <input type="text" name="rejectapp8" id="" placeholder="Approval" class="Reject-input">
-                            <button type="submit" class="add-announce-btn" id="Reject-upload-8">Upload</button>
+                            <button type="submit" class="add-announce-btn" id="product-upload-8">Upload</button>
                         </div>
                     </form>
                 </div>
 
-            <button class="add-announce-btn" id="add-Reject-btn-8">Add Reject</button>
+            <button class="add-announce-btn" id="add-product-btn-8">Add Reject</button>
             <table class="products-table">
             <tr>
                 <th>SN</th>
@@ -380,12 +380,12 @@
                             <input type="text" name="rejectquantity9" id="" placeholder="Quantity" class="Reject-input">
                             <input type="text" name="rejectname9" id="" placeholder="Reject Name" class="Reject-input">
                             <input type="text" name="rejectapp9" id="" placeholder="Approval" class="Reject-input">
-                            <button type="submit" class="add-announce-btn" id="Reject-upload-9">Upload</button>
+                            <button type="submit" class="add-announce-btn" id="product-upload-9">Upload</button>
                         </div>
                     </form>
                 </div>
 
-            <button class="add-announce-btn" id="add-Reject-btn-9">Add Reject</button>
+            <button class="add-announce-btn" id="add-product-btn-9">Add Reject</button>
             <table class="products-table">
             <tr>
                 <th>SN</th>
@@ -420,12 +420,12 @@
                             <input type="text" name="rejectquantity10" id="" placeholder="Quantity" class="Reject-input">
                             <input type="text" name="rejectname10" id="" placeholder="Reject Name" class="Reject-input">
                             <input type="text" name="rejectapp10" id="" placeholder="Approval" class="Reject-input">
-                            <button type="submit" class="add-announce-btn" id="Reject-upload-10">Upload</button>
+                            <button type="submit" class="add-announce-btn" id="product-upload-10">Upload</button>
                         </div>
                     </form>
                 </div>
 
-            <button class="add-announce-btn" id="add-Reject-btn-10">Add Reject</button>
+            <button class="add-announce-btn" id="add-product-btn-10">Add Reject</button>
             <table class="products-table">
             <tr>
                 <th>SN</th>
