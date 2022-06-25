@@ -60,9 +60,9 @@
                     <form action="{{route('addrej1')}}" method="post">
                        @csrf
                         <div class="inside-Reject-form">
-                            <input type="text" name="rejectquantity1" id="" placeholder="Quantity" class="Reject-input">
-                            <input type="text" name="rejectname1" id="" placeholder="Reject Name" class="Reject-input">
-                            <input type="text" name="rejectapp1" id="" placeholder="Approval" class="Reject-input">
+                            <input type="text" name="rejectquantity1" id="" placeholder="Quantity" class="product-input">
+                            <input type="text" name="rejectname1" id="" placeholder="Reject Name" class="product-input">
+                            <input type="text" name="rejectapp1" id="" placeholder="Approval" class="product-input">
                             <button type="submit" class="add-announce-btn" id="product-upload">Upload</button>
                         </div>
                     </form>
@@ -99,9 +99,9 @@
                     <form action="{{route('addrej2')}}" method="post">
                         @csrf
                         <div class="inside-Reject-form">
-                            <input type="text" name="rejectquantity2" id="" placeholder="Quantity" class="Reject-input">
-                            <input type="text" name="rejectname2" id="" placeholder="Reject Name" class="Reject-input">
-                            <input type="text" name="rejectapp2" id="" placeholder="Approval" class="Reject-input">
+                            <input type="text" name="rejectquantity2" id="" placeholder="Quantity" class="product-input">
+                            <input type="text" name="rejectname2" id="" placeholder="Reject Name" class="product-input">
+                            <input type="text" name="rejectapp2" id="" placeholder="Approval" class="product-input">
                             <button type="submit" class="add-announce-btn" id="product-upload-2">Upload</button>
                         </div>
                     </form>
@@ -138,9 +138,9 @@
                     <form action="{{route('addrej3')}}" method="post">
                         @csrf
                         <div class="inside-Reject-form">
-                            <input type="text" name="rejectquantity3" id="" placeholder="Quantity" class="Reject-input">
-                            <input type="text" name="rejectname3" id="" placeholder="Reject Name" class="Reject-input">
-                            <input type="text" name="rejectapp3" id="" placeholder="Approval" class="Reject-input">
+                            <input type="text" name="rejectquantity3" id="" placeholder="Quantity" class="product-input">
+                            <input type="text" name="rejectname3" id="" placeholder="Reject Name" class="product-input">
+                            <input type="text" name="rejectapp3" id="" placeholder="Approval" class="product-input">
                             <button type="submit" class="add-announce-btn" id="product-upload-3">Upload</button>
                         </div>
                     </form>
@@ -177,9 +177,9 @@
                     <form action="{{route('addrej4')}}" method="post">
                         @csrf
                         <div class="inside-Reject-form">
-                            <input type="text" name="rejectquantity4" id="" placeholder="Quantity" class="Reject-input">
-                            <input type="text" name="rejectname4" id="" placeholder="Reject Name" class="Reject-input">
-                            <input type="text" name="rejectapp4" id="" placeholder="Approval" class="Reject-input">
+                            <input type="text" name="rejectquantity4" id="" placeholder="Quantity" class="product-input">
+                            <input type="text" name="rejectname4" id="" placeholder="Reject Name" class="product-input">
+                            <input type="text" name="rejectapp4" id="" placeholder="Approval" class="product-input">
                             <button type="submit" class="add-announce-btn" id="product-upload-4">Upload</button>
                         </div>
                     </form>
@@ -217,9 +217,9 @@
                     <form action="{{route('addrej5')}}" method="post">
                         @csrf
                         <div class="inside-Reject-form">
-                            <input type="text" name="rejectquantity5" id="" placeholder="Quantity" class="Reject-input">
-                            <input type="text" name="rejectname5" id="" placeholder="Reject Name" class="Reject-input">
-                            <input type="text" name="rejectapp5" id="" placeholder="Approval" class="Reject-input">
+                            <input type="text" name="rejectquantity5" id="" placeholder="Quantity" class="product-input">
+                            <input type="text" name="rejectname5" id="" placeholder="Reject Name" class="product-input">
+                            <input type="text" name="rejectapp5" id="" placeholder="Approval" class="product-input">
                             <button type="submit" class="add-announce-btn" id="product-upload-5">Upload</button>
                         </div>
                     </form>
@@ -257,9 +257,9 @@
                     <form action="{{route('addrej6')}}" method="post">
                         @csrf
                         <div class="inside-Reject-form">
-                            <input type="text" name="rejectquantity6" id="" placeholder="Quantity" class="Reject-input">
-                            <input type="text" name="rejectname6" id="" placeholder="Reject Name" class="Reject-input">
-                            <input type="text" name="rejectapp6" id="" placeholder="Approval" class="Reject-input">
+                            <input type="text" name="rejectquantity6" id="" placeholder="Quantity" class="product-input">
+                            <input type="text" name="rejectname6" id="" placeholder="Reject Name" class="product-input">
+                            <input type="text" name="rejectapp6" id="" placeholder="Approval" class="product-input">
                             <button type="submit" class="add-announce-btn" id="product-upload-6">Upload</button>
                         </div>
                     </form>
@@ -297,9 +297,9 @@
                     <form action="{{route('addrej7')}}" method="post">
                         @csrf
                         <div class="inside-Reject-form">
-                            <input type="text" name="rejectquantity7" id="" placeholder="Quantity" class="Reject-input">
-                            <input type="text" name="rejectname7" id="" placeholder="Reject Name" class="Reject-input">
-                            <input type="text" name="rejectapp7" id="" placeholder="Approval" class="Reject-input">
+                            <input type="text" name="rejectquantity7" id="" placeholder="Quantity" class="product-input">
+                            <input type="text" name="rejectname7" id="" placeholder="Reject Name" class="product-input">
+                            <input type="text" name="rejectapp7" id="" placeholder="Approval" class="product-input">
                             <button type="submit" class="add-announce-btn" id="product-upload-7">Upload</button>
                         </div>
                     </form>
@@ -337,9 +337,9 @@
                     <form action="{{route('addrej8')}}" method="post">
                         @csrf
                         <div class="inside-Reject-form">
-                            <input type="text" name="rejectquantity8" id="" placeholder="Quantity" class="Reject-input">
-                            <input type="text" name="rejectname8" id="" placeholder="Reject Name" class="Reject-input">
-                            <input type="text" name="rejectapp8" id="" placeholder="Approval" class="Reject-input">
+                            <input type="text" name="rejectquantity8" id="" placeholder="Quantity" class="product-input">
+                            <input type="text" name="rejectname8" id="" placeholder="Reject Name" class="product-input">
+                            <input type="text" name="rejectapp8" id="" placeholder="Approval" class="product-input">
                             <button type="submit" class="add-announce-btn" id="product-upload-8">Upload</button>
                         </div>
                     </form>
@@ -377,9 +377,9 @@
                     <form action="{{route('addrej9')}}" method="post">
                         @csrf
                         <div class="inside-Reject-form">
-                            <input type="text" name="rejectquantity9" id="" placeholder="Quantity" class="Reject-input">
-                            <input type="text" name="rejectname9" id="" placeholder="Reject Name" class="Reject-input">
-                            <input type="text" name="rejectapp9" id="" placeholder="Approval" class="Reject-input">
+                            <input type="text" name="rejectquantity9" id="" placeholder="Quantity" class="product-input">
+                            <input type="text" name="rejectname9" id="" placeholder="Reject Name" class="product-input">
+                            <input type="text" name="rejectapp9" id="" placeholder="Approval" class="product-input">
                             <button type="submit" class="add-announce-btn" id="product-upload-9">Upload</button>
                         </div>
                     </form>
@@ -417,9 +417,9 @@
                     <form action="{{route('addrej10')}}" method="post">
                         @csrf
                         <div class="inside-Reject-form">
-                            <input type="text" name="rejectquantity10" id="" placeholder="Quantity" class="Reject-input">
-                            <input type="text" name="rejectname10" id="" placeholder="Reject Name" class="Reject-input">
-                            <input type="text" name="rejectapp10" id="" placeholder="Approval" class="Reject-input">
+                            <input type="text" name="rejectquantity10" id="" placeholder="Quantity" class="product-input">
+                            <input type="text" name="rejectname10" id="" placeholder="Reject Name" class="product-input">
+                            <input type="text" name="rejectapp10" id="" placeholder="Approval" class="product-input">
                             <button type="submit" class="add-announce-btn" id="product-upload-10">Upload</button>
                         </div>
                     </form>
