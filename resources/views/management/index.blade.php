@@ -51,14 +51,6 @@
     </div>
 </div>
 
-<div class="left-div">
-    <ul>
-        <li><a href="{{route('report')}}"> Report</a></li><hr class="left-div-hr"><hr>
-        <li><a href="{{route('forum')}}"> Forum</a></li><hr class="left-div-hr"><hr>
-    </ul>
-
-</div>
-
 @include('management.footer')
     
 </body>

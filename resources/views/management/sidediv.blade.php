@@ -19,7 +19,7 @@
             {{Auth::user()->firstname}} {{Auth::user()->lastname}}
             </span> <br><br>
             <span>Department: <br> {{Auth::user()->department}}</span> <br><br>
-            <span>Position: <br> {{Auth::user()->position}}</span>
+            <div class="position"> <br> {{Auth::user()->position}}</div>
             <div class="profile-picture-words"><a href="profilepicture/{{Auth::user()->id}}"> Profile Picture</a></div>
         </div>
     </div>
@@ -27,7 +27,8 @@
         <ul>
             <li><a href="{{route('products')}}"> Released Products</a></li> <hr>
             <li><a href="{{route('rejects')}}"> Rejects</a></li> <hr>
-            <li><a href="{{route('charts')}}"> Charts</a></li>
+            <li><a href="{{route('charts')}}"> Charts</a></li> <hr>
+            <li><a href="{{route('report')}}"> Report</a></li>
         </ul>
     </div>
 
