@@ -57,6 +57,7 @@
                   </div>
                 @endif
                 <div class="add-product-form">
+
                     <form action="{{route('addrej1')}}" method="post">
                        @csrf
                         <div class="inside-Reject-form">
@@ -66,6 +67,7 @@
                             <button type="submit" class="add-announce-btn" id="product-upload">Upload</button>
                         </div>
                     </form>
+                    
                 </div>
 
             <button class="add-announce-btn" id="add-product-btn">Add Reject</button>

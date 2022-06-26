@@ -34,6 +34,7 @@ class chartsController extends Controller
 
             $tatalProductRec1 = DB::table('products')->where('Product_Name','satini1')->whereYear('created_at', $year)->sum('Quantity');
             $avgpro1 = $tatalProductRec1/12;
+
             }
 
             $RejectRec1= [];
