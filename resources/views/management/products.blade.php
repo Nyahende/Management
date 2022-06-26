@@ -42,17 +42,17 @@
             <div id="product1">
                 <span class="product-header">Product One</span><br>
                 @if(Session::get('addproduct1'))
-                  <div class="product-success">
+                  <div class="Reject-success">
                     {{Session::get('addproduct1')}}
                   </div>
                 @endif
                 @if(Session::get('deleteproduct'))
-                  <div class="product-success">
+                  <div class="Reject-success">
                     {{Session::get('deleteproduct')}}
                   </div>
                 @endif
                 @if(Session::get('updateproduct'))
-                  <div class="product-success">
+                  <div class="Reject-success">
                     {{Session::get('updateproduct')}}
                   </div>
                 @endif
